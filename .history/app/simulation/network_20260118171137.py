@@ -1,3 +1,9 @@
+"""
+Infrastructure simulation module.
+Simulates Wi-Fi and network environments.
+No real networking is performed.
+"""
+
 from typing import List, Dict
 
 def simulate_networks() -> List[Dict]:

@@ -1,3 +1,8 @@
+  """
+Telemetry and logging module.
+Records simulation events in a safe, offline manner.
+"""
+
 import json
 from datetime import datetime
 from pathlib import Path

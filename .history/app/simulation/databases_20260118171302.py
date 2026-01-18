@@ -1,3 +1,9 @@
+"""
+Infrastructure simulation module.
+Simulates database configurations.
+No real databases are used.
+"""
+
 from typing import List, Dict
 
 def simulate_databases() -> List[Dict]:
