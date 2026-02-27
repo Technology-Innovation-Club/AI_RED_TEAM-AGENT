@@ -1,0 +1,3373 @@
+{
+  "metadata": {
+    "session_id": "session_20260226_154019",
+    "total_events": 244,
+    "last_updated": "2026-02-26T18:01:28.866819"
+  },
+  "events": [
+    {
+      "timestamp": "2026-02-17T15:46:53.328914",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting infrastructure simulation",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Infrastructure Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:46:53.328914",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting infrastructure simulation",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Infrastructure Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:46:53.331960",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Completed: 4 networks, 3 systems, 2 databases",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Infrastructure Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:46:53.331960",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Completed simulation: 4 networks, 3 systems, 2 databases",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Infrastructure Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:46:54.528341",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting infrastructure simulation",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Infrastructure Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:46:54.528341",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting infrastructure simulation",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Infrastructure Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:46:54.534575",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Completed: 4 networks, 3 systems, 2 databases",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Infrastructure Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:46:54.534575",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Completed simulation: 4 networks, 3 systems, 2 databases",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Infrastructure Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:46:58.359851",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting infrastructure simulation",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Infrastructure Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:46:58.359851",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting infrastructure simulation",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Infrastructure Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:46:58.363517",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Completed: 4 networks, 3 systems, 2 databases",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Infrastructure Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:46:58.363517",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Completed simulation: 4 networks, 3 systems, 2 databases",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Infrastructure Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:01.107016",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting infrastructure simulation",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Infrastructure Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:01.107016",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting infrastructure simulation",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Infrastructure Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:01.113860",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Completed: 4 networks, 3 systems, 2 databases",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Infrastructure Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:01.113860",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Completed simulation: 4 networks, 3 systems, 2 databases",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Infrastructure Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.572725",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting comprehensive attack simulation",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Full Attack Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.572725",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting comprehensive attack simulation",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Full Attack Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.574742",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting reconnaissance phase",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Attack Phase"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.574742",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "port_scan against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "port_scan",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.578392",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "port_scan against auth-server",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "port_scan",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.578392",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "port_scan against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "port_scan",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.597157",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "port_scan against web-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "port_scan",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.597157",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "port_scan against api-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "port_scan",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.623265",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "port_scan against api-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "port_scan",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.623265",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "service_discovery against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "service_discovery",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.638768",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "service_discovery against auth-server",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "service_discovery",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.638768",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "service_discovery against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "service_discovery",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.662700",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "service_discovery against web-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "service_discovery",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.662700",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "service_discovery against api-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "service_discovery",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.678498",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "service_discovery against api-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "service_discovery",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.678498",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting exploitation phase",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Attack Phase"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.678498",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "brute_force against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "brute_force",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.701471",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "brute_force against auth-server",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "brute_force",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.701471",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "brute_force against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "brute_force",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.723004",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "brute_force against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "brute_force",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.723004",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "sql_injection against users_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "sql_injection",
+        "target": "users_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.744897",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "sql_injection against users_db",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "sql_injection",
+        "target": "users_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.744897",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "sql_injection against logs_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "sql_injection",
+        "target": "logs_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.772967",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "sql_injection against logs_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "sql_injection",
+        "target": "logs_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.772967",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "authentication_bypass against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "authentication_bypass",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.792342",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "authentication_bypass against auth-server",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "authentication_bypass",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.792342",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "authentication_bypass against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "authentication_bypass",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.823265",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "authentication_bypass against web-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "authentication_bypass",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.823265",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting post_exploitation phase",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Attack Phase"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.823265",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "privilege_escalation against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "privilege_escalation",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.858764",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "privilege_escalation against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "privilege_escalation",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.858764",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "privilege_escalation against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "privilege_escalation",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.891656",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "privilege_escalation against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "privilege_escalation",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.891656",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.922506",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.922506",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.943100",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against web-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.943100",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against api-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.963564",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against api-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.963564",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against users_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "users_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.983873",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against users_db",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "users_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:32.983873",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against logs_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "logs_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:33.003834",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against logs_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "logs_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:33.003834",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:33.027490",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against auth-server",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "data_access",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:33.027490",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:33.041166",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:33.041166",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against api-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:33.066317",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against api-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "data_access",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:33.066317",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against users_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "users_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:33.089135",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against users_db",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "data_access",
+        "target": "users_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:33.089135",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against logs_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "logs_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:33.107431",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against logs_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "logs_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:33.107431",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Completed: 24 attacks executed",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Full Attack Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:33.107431",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Completed simulation: 24 attacks executed",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Full Attack Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.284252",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting comprehensive attack simulation",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Full Attack Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.284252",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting comprehensive attack simulation",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Full Attack Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.284252",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting reconnaissance phase",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Attack Phase"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.284252",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "port_scan against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "port_scan",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.308775",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "port_scan against auth-server",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "port_scan",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.308775",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "port_scan against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "port_scan",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.329630",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "port_scan against web-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "port_scan",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.329630",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "port_scan against api-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "port_scan",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.348049",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "port_scan against api-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "port_scan",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.348049",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "service_discovery against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "service_discovery",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.373348",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "service_discovery against auth-server",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "service_discovery",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.373348",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "service_discovery against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "service_discovery",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.394239",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "service_discovery against web-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "service_discovery",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.394239",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "service_discovery against api-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "service_discovery",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.415653",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "service_discovery against api-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "service_discovery",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.415653",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting exploitation phase",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Attack Phase"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.415653",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "brute_force against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "brute_force",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.436060",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "brute_force against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "brute_force",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.436060",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "brute_force against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "brute_force",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.460071",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "brute_force against web-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "brute_force",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.460071",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "sql_injection against users_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "sql_injection",
+        "target": "users_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.477701",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "sql_injection against users_db",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "sql_injection",
+        "target": "users_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.477701",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "sql_injection against logs_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "sql_injection",
+        "target": "logs_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.493900",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "sql_injection against logs_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "sql_injection",
+        "target": "logs_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.493900",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "authentication_bypass against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "authentication_bypass",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.516110",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "authentication_bypass against auth-server",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "authentication_bypass",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.516110",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "authentication_bypass against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "authentication_bypass",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.534524",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "authentication_bypass against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "authentication_bypass",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.534524",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting post_exploitation phase",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Attack Phase"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.534524",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "privilege_escalation against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "privilege_escalation",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.554108",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "privilege_escalation against auth-server",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "privilege_escalation",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.554108",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "privilege_escalation against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "privilege_escalation",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.574602",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "privilege_escalation against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "privilege_escalation",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.574602",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.592032",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.592032",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.615070",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against web-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.615070",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against api-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.633082",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against api-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.633082",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against users_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "users_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.670230",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against users_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "users_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.670230",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against logs_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "logs_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.692420",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against logs_db",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "logs_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.692420",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.712642",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.712642",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.732129",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.732129",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against api-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.756446",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against api-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "data_access",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.756446",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against users_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "users_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.783007",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against users_db",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "data_access",
+        "target": "users_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.783007",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against logs_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "logs_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.803364",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against logs_db",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "data_access",
+        "target": "logs_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.803364",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Completed: 24 attacks executed",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Full Attack Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:34.803364",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Completed simulation: 24 attacks executed",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Full Attack Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:35.996648",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting infrastructure simulation",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Infrastructure Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:35.996648",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting infrastructure simulation",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Infrastructure Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:35.999614",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Completed: 4 networks, 3 systems, 2 databases",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Infrastructure Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:35.999614",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Completed simulation: 4 networks, 3 systems, 2 databases",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Infrastructure Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.681804",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting comprehensive attack simulation",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Full Attack Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.681804",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting comprehensive attack simulation",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Full Attack Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.703063",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting reconnaissance phase",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Attack Phase"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.703063",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "port_scan against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "port_scan",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.724928",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "port_scan against auth-server",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "port_scan",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.724928",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "port_scan against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "port_scan",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.741846",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "port_scan against web-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "port_scan",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.741846",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "port_scan against api-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "port_scan",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.762603",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "port_scan against api-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "port_scan",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.762603",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "service_discovery against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "service_discovery",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.783295",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "service_discovery against auth-server",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "service_discovery",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.783295",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "service_discovery against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "service_discovery",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.804200",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "service_discovery against web-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "service_discovery",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.804200",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "service_discovery against api-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "service_discovery",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.825190",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "service_discovery against api-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "service_discovery",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.825190",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting exploitation phase",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Attack Phase"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.825729",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "brute_force against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "brute_force",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.845041",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "brute_force against auth-server",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "brute_force",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.845041",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "brute_force against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "brute_force",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.864625",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "brute_force against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "brute_force",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.864625",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "sql_injection against users_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "sql_injection",
+        "target": "users_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.883114",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "sql_injection against users_db",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "sql_injection",
+        "target": "users_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.883114",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "sql_injection against logs_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "sql_injection",
+        "target": "logs_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.903443",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "sql_injection against logs_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "sql_injection",
+        "target": "logs_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.903443",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "authentication_bypass against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "authentication_bypass",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.922564",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "authentication_bypass against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "authentication_bypass",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.922564",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "authentication_bypass against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "authentication_bypass",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.937736",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "authentication_bypass against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "authentication_bypass",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.937736",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting post_exploitation phase",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Attack Phase"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.937736",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "privilege_escalation against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "privilege_escalation",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.962354",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "privilege_escalation against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "privilege_escalation",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.962354",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "privilege_escalation against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "privilege_escalation",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.983344",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "privilege_escalation against web-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "privilege_escalation",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:39.983344",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:40.005856",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against auth-server",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:40.005856",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:40.028445",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:40.028445",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against api-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:40.048212",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against api-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:40.048212",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against users_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "users_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:40.070408",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against users_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "users_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:40.070408",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against logs_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "logs_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:40.090335",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against logs_db",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "logs_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:40.090335",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:40.103403",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:40.110314",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:40.131897",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against web-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "data_access",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:40.131897",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against api-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:40.153463",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against api-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "data_access",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:40.153463",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against users_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "users_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:40.177395",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against users_db",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "data_access",
+        "target": "users_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:40.177395",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against logs_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "logs_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:40.192278",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against logs_db",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "data_access",
+        "target": "logs_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:40.192278",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Completed: 24 attacks executed",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Full Attack Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:40.192278",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Completed simulation: 24 attacks executed",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Full Attack Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.172439",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting comprehensive attack simulation",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Full Attack Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.172439",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting comprehensive attack simulation",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Full Attack Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.173243",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting reconnaissance phase",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Attack Phase"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.173243",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "port_scan against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "port_scan",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.189296",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "port_scan against auth-server",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "port_scan",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.189296",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "port_scan against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "port_scan",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.202950",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "port_scan against web-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "port_scan",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.202950",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "port_scan against api-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "port_scan",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.235298",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "port_scan against api-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "port_scan",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.235298",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "service_discovery against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "service_discovery",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.262955",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "service_discovery against auth-server",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "service_discovery",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.262955",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "service_discovery against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "service_discovery",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.292511",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "service_discovery against web-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "service_discovery",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.292511",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "service_discovery against api-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "service_discovery",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.317047",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "service_discovery against api-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "service_discovery",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.317047",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting exploitation phase",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Attack Phase"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.317047",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "brute_force against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "brute_force",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.333390",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "brute_force against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "brute_force",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.333390",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "brute_force against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "brute_force",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.357918",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "brute_force against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "brute_force",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.357918",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "sql_injection against users_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "sql_injection",
+        "target": "users_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.378471",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "sql_injection against users_db",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "sql_injection",
+        "target": "users_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.378471",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "sql_injection against logs_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "sql_injection",
+        "target": "logs_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.403173",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "sql_injection against logs_db",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "sql_injection",
+        "target": "logs_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.403173",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "authentication_bypass against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "authentication_bypass",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.423888",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "authentication_bypass against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "authentication_bypass",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.423888",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "authentication_bypass against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "authentication_bypass",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.454279",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "authentication_bypass against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "authentication_bypass",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.454279",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Starting post_exploitation phase",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Attack Phase"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.454279",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "privilege_escalation against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "privilege_escalation",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.487415",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "privilege_escalation against auth-server",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "privilege_escalation",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.487415",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "privilege_escalation against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "privilege_escalation",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.524334",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "privilege_escalation against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "privilege_escalation",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.524334",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.556350",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.556350",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.607045",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against web-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.607045",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against api-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.631909",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against api-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.631909",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against users_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "users_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.657019",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against users_db",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "users_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.657019",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against logs_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "logs_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.682034",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "lateral_movement against logs_db",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "lateral_movement",
+        "target": "logs_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.682034",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against auth-server",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.707541",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against auth-server",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "data_access",
+        "target": "auth-server"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.707541",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.732104",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against web-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "web-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.732104",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against api-prod",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.756982",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against api-prod",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "data_access",
+        "target": "api-prod"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.756982",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against users_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "users_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.778081",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against users_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "users_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.778081",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against logs_db",
+      "component": "attack_executor",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": false,
+      "details": {
+        "attack_type": "data_access",
+        "target": "logs_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.803771",
+      "session_id": "session_20260217_154528",
+      "event_type": "Attack Execution",
+      "message": "data_access against logs_db",
+      "component": "attack_executor",
+      "severity": "warning",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "attack_type": "data_access",
+        "target": "logs_db"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.803771",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Completed: 24 attacks executed",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Full Attack Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:47:50.803771",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "Completed simulation: 24 attacks executed",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Full Attack Simulation"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T15:48:50.707944",
+      "session_id": "session_20260217_154528",
+      "event_type": "System Event",
+      "message": "AARTA web interface shutting down",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Application Shutdown"
+      }
+    },
+    {
+      "timestamp": "2026-02-26T15:40:19.643907",
+      "session_id": "session_20260226_154019",
+      "event_type": "System Event",
+      "message": "Session ID: 3ff15d5e",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Orchestrator Initialized"
+      }
+    },
+    {
+      "timestamp": "2026-02-26T15:40:19.643907",
+      "session_id": "session_20260226_154019",
+      "event_type": "System Event",
+      "message": "AARTA web interface started",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Application Startup"
+      }
+    },
+    {
+      "timestamp": "2026-02-26T18:01:28.863690",
+      "session_id": "session_20260226_154019",
+      "event_type": "System Event",
+      "message": "AARTA web interface shutting down",
+      "component": "system",
+      "severity": "info",
+      "source_ip": "127.0.0.1",
+      "success": true,
+      "details": {
+        "event": "Application Shutdown"
+      }
+    }
+  ]
+}

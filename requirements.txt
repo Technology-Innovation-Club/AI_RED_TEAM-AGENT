@@ -1,0 +1,87 @@
+# # AI Automated Red Team Agent (AARTA) - Dependencies
+# # Required packages for the ethical red team simulation system
+
+# # Web Framework
+# fastapi==0.104.1
+# uvicorn[standard]==0.24.0
+
+# # Data Validation and Serialization
+# pydantic==2.5.0
+# pydantic-settings==2.1.0
+
+# # HTTP Client
+# httpx==0.25.2
+# requests==2.31.0
+
+# # Data Processing
+# python-multipart==0.0.6
+# python-jose[cryptography]==3.3.0
+# passlib[bcrypt]==1.7.4
+
+# # CORS Support
+# python-cors==1.7.0
+
+# # Development and Testing
+# pytest==7.4.3
+# pytest-asyncio==0.21.1
+# pytest-cov==4.1.0
+# black==23.11.0
+# flake8==6.1.0
+# mypy==1.7.1
+
+# # Security
+# cryptography==41.0.8
+
+# # Utilities
+# python-dateutil==2.8.2
+# pytz==2023.3
+
+# # Optional: For enhanced features
+# # jinja2==3.1.2  # For template rendering
+# # aiosqlite==0.19.0  # For database operations
+# # redis==5.0.1  # For caching
+# # celery==5.3.4  # For background tasks
+
+# AI Automated Red Team Agent (AARTA) - Dependencies
+# Required packages for the ethical red team simulation system
+
+# Web Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# Data Validation and Serialization
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# HTTP Client
+httpx==0.25.2
+requests==2.31.0
+
+# Data Processing
+python-multipart==0.0.6
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# CORS Support: Handled natively in FastAPI via CORSMiddleware (no external package needed)
+# See FastAPI docs: https://fastapi.tiangolo.com/tutorial/cors/
+
+# Development and Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+black==23.11.0
+flake8==6.1.0
+mypy==1.7.1
+
+# Security
+cryptography==42.0.8
+
+# Utilities
+python-dateutil==2.8.2
+pytz==2023.3
+
+# Optional: For enhanced features
+# jinja2==3.1.2  # For template rendering
+# aiosqlite==0.19.0  # For database operations
+# redis==5.0.1  # For caching
+# celery==5.3.4  # For background tasks

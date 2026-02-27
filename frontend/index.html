@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cyber Security Simulation Dashboard</h1>
+
+        <div class="buttons">
+            <button id="simulateInfraBtn">Simulate Infrastructure</button>
+            <button id="runAttackBtn">Run Attack Simulation</button>
+            <button id="analyzeVulnBtn">Analyze Vulnerabilities</button>
+            <button id="generateReportBtn">Generate Report</button>
+            <button id="runWorkflowBtn">Run Full Workflow</button>
+            <button id="resetBtn">Reset All Data</button>
+        </div>
+
+        <div id="statusDisplay">
+            <h2>Status</h2>
+            <ul>
+                <li>Infrastructure Loaded: <span id="infraStatus">❌</span></li>
+                <li>Attacks Executed: <span id="attackStatus">❌</span></li>
+                <li>Vulnerabilities Analyzed: <span id="vulnStatus">❌</span></li>
+                <li>Report Generated: <span id="reportStatus">❌</span></li>
+            </ul>
+        </div>
+
+        <div id="loadingIndicator" class="hidden">Loading...</div>
+    </div>
+
+    <script src="frontend/script.js"></script>
+</body>
+</html>
