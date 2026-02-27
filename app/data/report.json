@@ -1,0 +1,2811 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-17T16:05:18.884869",
+    "session_id": "03a62255",
+    "total_vulnerabilities": 173,
+    "critical_count": 21,
+    "high_count": 18,
+    "medium_count": 134,
+    "low_count": 0
+  },
+  "content": {
+    "metadata": {
+      "generated_at": "2026-02-17T16:05:18.884869",
+      "session_id": "03a62255",
+      "total_vulnerabilities": 173,
+      "critical_count": 21,
+      "high_count": 18,
+      "medium_count": 134,
+      "low_count": 0
+    },
+    "executive_summary": "The security assessment identified 173 vulnerabilities across the simulated infrastructure. 21 critical vulnerabilities require immediate attention. 18 high-severity vulnerabilities should be addressed promptly.",
+    "attack_timeline": "Attack Execution Timeline:\n✓ 2026-02-17T15:47:32.574742 - port_scan against auth-server\n✓ 2026-02-17T15:47:32.578392 - port_scan against web-prod\n✓ 2026-02-17T15:47:32.597157 - port_scan against api-prod\n✓ 2026-02-17T15:47:32.623265 - service_discovery against auth-server\n✓ 2026-02-17T15:47:32.638768 - service_discovery against web-prod\n✓ 2026-02-17T15:47:32.662700 - service_discovery against api-prod\n✓ 2026-02-17T15:47:32.678498 - brute_force against auth-server\n✗ 2026-02-17T15:47:32.701471 - brute_force against web-prod\n✓ 2026-02-17T15:47:32.723004 - sql_injection against users_db\n✗ 2026-02-17T15:47:32.744897 - sql_injection against logs_db\n✓ 2026-02-17T15:47:32.772967 - authentication_bypass against auth-server\n✓ 2026-02-17T15:47:32.792342 - authentication_bypass against web-prod\n✗ 2026-02-17T15:47:32.823265 - privilege_escalation against auth-server\n✗ 2026-02-17T15:47:32.858764 - privilege_escalation against web-prod\n✗ 2026-02-17T15:47:32.891656 - lateral_movement against auth-server\n✓ 2026-02-17T15:47:32.922506 - lateral_movement against web-prod\n✗ 2026-02-17T15:47:32.943100 - lateral_movement against api-prod\n✓ 2026-02-17T15:47:32.963564 - lateral_movement against users_db\n✗ 2026-02-17T15:47:32.983873 - lateral_movement against logs_db\n✓ 2026-02-17T15:47:33.003834 - data_access against auth-server\n✗ 2026-02-17T15:47:33.027490 - data_access against web-prod\n✓ 2026-02-17T15:47:33.041166 - data_access against api-prod\n✓ 2026-02-17T15:47:33.066317 - data_access against users_db\n✗ 2026-02-17T15:47:33.089135 - data_access against logs_db\n✓ 2026-02-17T15:47:34.284252 - port_scan against auth-server\n✓ 2026-02-17T15:47:34.308775 - port_scan against web-prod\n✓ 2026-02-17T15:47:34.329630 - port_scan against api-prod\n✓ 2026-02-17T15:47:34.348049 - service_discovery against auth-server\n✓ 2026-02-17T15:47:34.373348 - service_discovery against web-prod\n✓ 2026-02-17T15:47:34.394239 - service_discovery against api-prod\n✗ 2026-02-17T15:47:34.415653 - brute_force against auth-server\n✓ 2026-02-17T15:47:34.436060 - brute_force against web-prod\n✓ 2026-02-17T15:47:34.460071 - sql_injection against users_db\n✗ 2026-02-17T15:47:34.477701 - sql_injection against logs_db\n✓ 2026-02-17T15:47:34.493900 - authentication_bypass against auth-server\n✗ 2026-02-17T15:47:34.516110 - authentication_bypass against web-prod\n✓ 2026-02-17T15:47:34.534524 - privilege_escalation against auth-server\n✗ 2026-02-17T15:47:34.554108 - privilege_escalation against web-prod\n✗ 2026-02-17T15:47:34.574602 - lateral_movement against auth-server\n✓ 2026-02-17T15:47:34.592032 - lateral_movement against web-prod\n✗ 2026-02-17T15:47:34.615070 - lateral_movement against api-prod\n✗ 2026-02-17T15:47:34.633082 - lateral_movement against users_db\n✓ 2026-02-17T15:47:34.670230 - lateral_movement against logs_db\n✗ 2026-02-17T15:47:34.692420 - data_access against auth-server\n✗ 2026-02-17T15:47:34.712642 - data_access against web-prod\n✓ 2026-02-17T15:47:34.732129 - data_access against api-prod\n✓ 2026-02-17T15:47:34.756446 - data_access against users_db\n✓ 2026-02-17T15:47:34.783007 - data_access against logs_db\n✓ 2026-02-17T15:47:39.703063 - port_scan against auth-server\n✓ 2026-02-17T15:47:39.724928 - port_scan against web-prod\n✓ 2026-02-17T15:47:39.741846 - port_scan against api-prod\n✓ 2026-02-17T15:47:39.762603 - service_discovery against auth-server\n✓ 2026-02-17T15:47:39.783295 - service_discovery against web-prod\n✓ 2026-02-17T15:47:39.804200 - service_discovery against api-prod\n✓ 2026-02-17T15:47:39.825729 - brute_force against auth-server\n✗ 2026-02-17T15:47:39.845041 - brute_force against web-prod\n✓ 2026-02-17T15:47:39.864625 - sql_injection against users_db\n✗ 2026-02-17T15:47:39.883114 - sql_injection against logs_db\n✗ 2026-02-17T15:47:39.903443 - authentication_bypass against auth-server\n✗ 2026-02-17T15:47:39.922564 - authentication_bypass against web-prod\n✗ 2026-02-17T15:47:39.937736 - privilege_escalation against auth-server\n✓ 2026-02-17T15:47:39.962354 - privilege_escalation against web-prod\n✓ 2026-02-17T15:47:39.983344 - lateral_movement against auth-server\n✗ 2026-02-17T15:47:40.005856 - lateral_movement against web-prod\n✗ 2026-02-17T15:47:40.028445 - lateral_movement against api-prod\n✗ 2026-02-17T15:47:40.048212 - lateral_movement against users_db\n✓ 2026-02-17T15:47:40.070408 - lateral_movement against logs_db\n✗ 2026-02-17T15:47:40.090335 - data_access against auth-server\n✓ 2026-02-17T15:47:40.110314 - data_access against web-prod\n✓ 2026-02-17T15:47:40.131897 - data_access against api-prod\n✓ 2026-02-17T15:47:40.153463 - data_access against users_db\n✓ 2026-02-17T15:47:40.177395 - data_access against logs_db\n✓ 2026-02-17T15:47:50.173243 - port_scan against auth-server\n✓ 2026-02-17T15:47:50.189296 - port_scan against web-prod\n✓ 2026-02-17T15:47:50.202950 - port_scan against api-prod\n✓ 2026-02-17T15:47:50.235298 - service_discovery against auth-server\n✓ 2026-02-17T15:47:50.262955 - service_discovery against web-prod\n✓ 2026-02-17T15:47:50.292511 - service_discovery against api-prod\n✗ 2026-02-17T15:47:50.317047 - brute_force against auth-server\n✗ 2026-02-17T15:47:50.333390 - brute_force against web-prod\n✓ 2026-02-17T15:47:50.357918 - sql_injection against users_db\n✓ 2026-02-17T15:47:50.378471 - sql_injection against logs_db\n✗ 2026-02-17T15:47:50.403173 - authentication_bypass against auth-server\n✗ 2026-02-17T15:47:50.423888 - authentication_bypass against web-prod\n✓ 2026-02-17T15:47:50.454279 - privilege_escalation against auth-server\n✗ 2026-02-17T15:47:50.487415 - privilege_escalation against web-prod\n✗ 2026-02-17T15:47:50.524334 - lateral_movement against auth-server\n✓ 2026-02-17T15:47:50.556350 - lateral_movement against web-prod\n✗ 2026-02-17T15:47:50.607045 - lateral_movement against api-prod\n✓ 2026-02-17T15:47:50.631909 - lateral_movement against users_db\n✓ 2026-02-17T15:47:50.657019 - lateral_movement against logs_db\n✓ 2026-02-17T15:47:50.682034 - data_access against auth-server\n✗ 2026-02-17T15:47:50.707541 - data_access against web-prod\n✓ 2026-02-17T15:47:50.732104 - data_access against api-prod\n✗ 2026-02-17T15:47:50.756982 - data_access against users_db\n✓ 2026-02-17T15:47:50.778081 - data_access against logs_db\n✓ 2026-02-17T15:54:34.968423 - port_scan against auth-server\n✓ 2026-02-17T15:54:34.972788 - port_scan against web-prod\n✓ 2026-02-17T15:54:35.004213 - port_scan against api-prod\n✗ 2026-02-17T15:54:35.035057 - service_discovery against auth-server\n✓ 2026-02-17T15:54:35.057862 - service_discovery against web-prod\n✓ 2026-02-17T15:54:35.088013 - service_discovery against api-prod\n✗ 2026-02-17T15:54:35.112990 - brute_force against auth-server\n✓ 2026-02-17T15:54:35.136365 - brute_force against web-prod\n✓ 2026-02-17T15:54:35.160572 - sql_injection against users_db\n✗ 2026-02-17T15:54:35.185018 - sql_injection against logs_db\n✗ 2026-02-17T15:54:35.209630 - authentication_bypass against auth-server\n✗ 2026-02-17T15:54:35.236495 - authentication_bypass against web-prod\n✓ 2026-02-17T15:54:35.259125 - privilege_escalation against auth-server\n✓ 2026-02-17T15:54:35.284399 - privilege_escalation against web-prod\n✓ 2026-02-17T15:54:35.304796 - lateral_movement against auth-server\n✗ 2026-02-17T15:54:35.327111 - lateral_movement against web-prod\n✗ 2026-02-17T15:54:35.353060 - lateral_movement against api-prod\n✓ 2026-02-17T15:54:35.372920 - lateral_movement against users_db\n✓ 2026-02-17T15:54:35.394187 - lateral_movement against logs_db\n✗ 2026-02-17T15:54:35.418377 - data_access against auth-server\n✓ 2026-02-17T15:54:35.439957 - data_access against web-prod\n✓ 2026-02-17T15:54:35.467211 - data_access against api-prod\n✓ 2026-02-17T15:54:35.489711 - data_access against users_db\n✓ 2026-02-17T15:54:35.509699 - data_access against logs_db\n✓ 2026-02-17T15:59:38.883560 - port_scan against auth-server\n✓ 2026-02-17T15:59:38.888585 - port_scan against web-prod\n✓ 2026-02-17T15:59:38.903506 - port_scan against api-prod\n✓ 2026-02-17T15:59:38.923722 - service_discovery against auth-server\n✓ 2026-02-17T15:59:38.937447 - service_discovery against web-prod\n✓ 2026-02-17T15:59:38.959376 - service_discovery against api-prod\n✓ 2026-02-17T15:59:38.978277 - brute_force against auth-server\n✗ 2026-02-17T15:59:38.996906 - brute_force against web-prod\n✓ 2026-02-17T15:59:39.021822 - sql_injection against users_db\n✓ 2026-02-17T15:59:39.048227 - sql_injection against logs_db\n✗ 2026-02-17T15:59:39.072715 - authentication_bypass against auth-server\n✗ 2026-02-17T15:59:39.091937 - authentication_bypass against web-prod\n✓ 2026-02-17T15:59:39.118626 - privilege_escalation against auth-server\n✓ 2026-02-17T15:59:39.140789 - privilege_escalation against web-prod\n✗ 2026-02-17T15:59:39.168506 - lateral_movement against auth-server\n✓ 2026-02-17T15:59:39.189753 - lateral_movement against web-prod\n✓ 2026-02-17T15:59:39.214552 - lateral_movement against api-prod\n✗ 2026-02-17T15:59:39.239131 - lateral_movement against users_db\n✗ 2026-02-17T15:59:39.262219 - lateral_movement against logs_db\n✗ 2026-02-17T15:59:39.282300 - data_access against auth-server\n✗ 2026-02-17T15:59:39.305416 - data_access against web-prod\n✓ 2026-02-17T15:59:39.330510 - data_access against api-prod\n✓ 2026-02-17T15:59:39.355030 - data_access against users_db\n✓ 2026-02-17T15:59:39.377461 - data_access against logs_db\n✓ 2026-02-17T15:59:42.583698 - port_scan against auth-server\n✓ 2026-02-17T15:59:42.585230 - port_scan against web-prod\n✓ 2026-02-17T15:59:42.602755 - port_scan against api-prod\n✗ 2026-02-17T15:59:42.622582 - service_discovery against auth-server\n✓ 2026-02-17T15:59:42.640792 - service_discovery against web-prod\n✓ 2026-02-17T15:59:42.658927 - service_discovery against api-prod\n✗ 2026-02-17T15:59:42.677154 - brute_force against auth-server\n✗ 2026-02-17T15:59:42.695165 - brute_force against web-prod\n✗ 2026-02-17T15:59:42.718667 - sql_injection against users_db\n✓ 2026-02-17T15:59:42.734911 - sql_injection against logs_db\n✗ 2026-02-17T15:59:42.752922 - authentication_bypass against auth-server\n✗ 2026-02-17T15:59:42.772682 - authentication_bypass against web-prod\n✗ 2026-02-17T15:59:42.790691 - privilege_escalation against auth-server\n✗ 2026-02-17T15:59:42.807215 - privilege_escalation against web-prod\n✗ 2026-02-17T15:59:42.828865 - lateral_movement against auth-server\n✗ 2026-02-17T15:59:42.849342 - lateral_movement against web-prod\n✓ 2026-02-17T15:59:42.868941 - lateral_movement against api-prod\n✗ 2026-02-17T15:59:42.889724 - lateral_movement against users_db\n✓ 2026-02-17T15:59:42.908715 - lateral_movement against logs_db\n✓ 2026-02-17T15:59:42.927310 - data_access against auth-server\n✓ 2026-02-17T15:59:42.956540 - data_access against web-prod\n✗ 2026-02-17T15:59:42.975143 - data_access against api-prod\n✓ 2026-02-17T15:59:42.993743 - data_access against users_db\n✓ 2026-02-17T15:59:43.012393 - data_access against logs_db\n✓ 2026-02-17T16:00:46.553050 - port_scan against auth-server\n✓ 2026-02-17T16:00:46.555171 - port_scan against web-prod\n✓ 2026-02-17T16:00:46.598101 - port_scan against api-prod\n✓ 2026-02-17T16:00:46.635246 - service_discovery against auth-server\n✓ 2026-02-17T16:00:46.665085 - service_discovery against web-prod\n✓ 2026-02-17T16:00:46.687532 - service_discovery against api-prod\n✗ 2026-02-17T16:00:46.721356 - brute_force against auth-server\n✗ 2026-02-17T16:00:46.754034 - brute_force against web-prod\n✓ 2026-02-17T16:00:46.787164 - sql_injection against users_db\n✗ 2026-02-17T16:00:46.819344 - sql_injection against logs_db\n✓ 2026-02-17T16:00:46.837143 - authentication_bypass against auth-server\n✗ 2026-02-17T16:00:46.863880 - authentication_bypass against web-prod\n✗ 2026-02-17T16:00:46.889376 - privilege_escalation against auth-server\n✗ 2026-02-17T16:00:46.916088 - privilege_escalation against web-prod\n✗ 2026-02-17T16:00:46.937249 - lateral_movement against auth-server\n✗ 2026-02-17T16:00:46.953432 - lateral_movement against web-prod\n✓ 2026-02-17T16:00:46.980371 - lateral_movement against api-prod\n✗ 2026-02-17T16:00:46.998450 - lateral_movement against users_db\n✗ 2026-02-17T16:00:47.027478 - lateral_movement against logs_db\n✓ 2026-02-17T16:00:47.059235 - data_access against auth-server\n✗ 2026-02-17T16:00:47.090891 - data_access against web-prod\n✓ 2026-02-17T16:00:47.122857 - data_access against api-prod\n✓ 2026-02-17T16:00:47.148478 - data_access against users_db\n✗ 2026-02-17T16:00:47.172937 - data_access against logs_db\n✓ 2026-02-17T16:00:52.027543 - port_scan against auth-server\n✓ 2026-02-17T16:00:52.036383 - port_scan against web-prod\n✓ 2026-02-17T16:00:52.071092 - port_scan against api-prod\n✓ 2026-02-17T16:00:52.103287 - service_discovery against auth-server\n✓ 2026-02-17T16:00:52.144797 - service_discovery against web-prod\n✓ 2026-02-17T16:00:52.184414 - service_discovery against api-prod\n✗ 2026-02-17T16:00:52.220031 - brute_force against auth-server\n✗ 2026-02-17T16:00:52.250841 - brute_force against web-prod\n✓ 2026-02-17T16:00:52.286657 - sql_injection against users_db\n✓ 2026-02-17T16:00:52.314822 - sql_injection against logs_db\n✗ 2026-02-17T16:00:52.333644 - authentication_bypass against auth-server\n✓ 2026-02-17T16:00:52.365775 - authentication_bypass against web-prod\n✓ 2026-02-17T16:00:52.390393 - privilege_escalation against auth-server\n✗ 2026-02-17T16:00:52.417265 - privilege_escalation against web-prod\n✓ 2026-02-17T16:00:52.442081 - lateral_movement against auth-server\n✓ 2026-02-17T16:00:52.470261 - lateral_movement against web-prod\n✓ 2026-02-17T16:00:52.491668 - lateral_movement against api-prod\n✗ 2026-02-17T16:00:52.521240 - lateral_movement against users_db\n✗ 2026-02-17T16:00:52.549612 - lateral_movement against logs_db\n✗ 2026-02-17T16:00:52.572574 - data_access against auth-server\n✓ 2026-02-17T16:00:52.596762 - data_access against web-prod\n✗ 2026-02-17T16:00:52.622781 - data_access against api-prod\n✗ 2026-02-17T16:00:52.647756 - data_access against users_db\n✓ 2026-02-17T16:00:52.668752 - data_access against logs_db\n✓ 2026-02-17T16:03:07.758565 - port_scan against auth-server\n✓ 2026-02-17T16:03:07.769324 - port_scan against web-prod\n✓ 2026-02-17T16:03:07.793408 - port_scan against api-prod\n✓ 2026-02-17T16:03:07.819909 - service_discovery against auth-server\n✓ 2026-02-17T16:03:07.849581 - service_discovery against web-prod\n✓ 2026-02-17T16:03:07.878547 - service_discovery against api-prod\n✓ 2026-02-17T16:03:07.908046 - brute_force against auth-server\n✗ 2026-02-17T16:03:07.934103 - brute_force against web-prod\n✗ 2026-02-17T16:03:07.958400 - sql_injection against users_db\n✓ 2026-02-17T16:03:07.983813 - sql_injection against logs_db\n✗ 2026-02-17T16:03:08.015862 - authentication_bypass against auth-server\n✗ 2026-02-17T16:03:08.048323 - authentication_bypass against web-prod\n✗ 2026-02-17T16:03:08.081154 - privilege_escalation against auth-server\n✗ 2026-02-17T16:03:08.112479 - privilege_escalation against web-prod\n✗ 2026-02-17T16:03:08.146060 - lateral_movement against auth-server\n✗ 2026-02-17T16:03:08.174820 - lateral_movement against web-prod\n✓ 2026-02-17T16:03:08.199908 - lateral_movement against api-prod\n✗ 2026-02-17T16:03:08.231530 - lateral_movement against users_db\n✗ 2026-02-17T16:03:08.257805 - lateral_movement against logs_db\n✗ 2026-02-17T16:03:08.284004 - data_access against auth-server\n✗ 2026-02-17T16:03:08.312589 - data_access against web-prod\n✗ 2026-02-17T16:03:08.332213 - data_access against api-prod\n✓ 2026-02-17T16:03:08.372772 - data_access against users_db\n✓ 2026-02-17T16:03:08.399211 - data_access against logs_db\n✓ 2026-02-17T16:04:41.472570 - port_scan against auth-server\n✓ 2026-02-17T16:04:41.482223 - port_scan against web-prod\n✓ 2026-02-17T16:04:41.507659 - port_scan against api-prod\n✓ 2026-02-17T16:04:41.535070 - service_discovery against auth-server\n✓ 2026-02-17T16:04:41.559032 - service_discovery against web-prod\n✓ 2026-02-17T16:04:41.581791 - service_discovery against api-prod\n✓ 2026-02-17T16:04:41.608563 - brute_force against auth-server\n✗ 2026-02-17T16:04:41.637593 - brute_force against web-prod\n✗ 2026-02-17T16:04:41.660275 - sql_injection against users_db\n✓ 2026-02-17T16:04:41.687952 - sql_injection against logs_db\n✓ 2026-02-17T16:04:41.712993 - authentication_bypass against auth-server\n✓ 2026-02-17T16:04:41.737631 - authentication_bypass against web-prod\n✗ 2026-02-17T16:04:41.768944 - privilege_escalation against auth-server\n✓ 2026-02-17T16:04:41.795050 - privilege_escalation against web-prod\n✗ 2026-02-17T16:04:41.821481 - lateral_movement against auth-server\n✗ 2026-02-17T16:04:41.850217 - lateral_movement against web-prod\n✗ 2026-02-17T16:04:41.877484 - lateral_movement against api-prod\n✗ 2026-02-17T16:04:41.902865 - lateral_movement against users_db\n✓ 2026-02-17T16:04:41.933128 - lateral_movement against logs_db\n✓ 2026-02-17T16:04:41.973435 - data_access against auth-server\n✓ 2026-02-17T16:04:42.007992 - data_access against web-prod\n✓ 2026-02-17T16:04:42.043292 - data_access against api-prod\n✗ 2026-02-17T16:04:42.082216 - data_access against users_db\n✓ 2026-02-17T16:04:42.119007 - data_access against logs_db\n✓ 2026-02-17T16:05:18.092731 - port_scan against auth-server\n✓ 2026-02-17T16:05:18.104840 - port_scan against web-prod\n✓ 2026-02-17T16:05:18.141227 - port_scan against api-prod\n✓ 2026-02-17T16:05:18.178297 - service_discovery against auth-server\n✓ 2026-02-17T16:05:18.212753 - service_discovery against web-prod\n✓ 2026-02-17T16:05:18.243203 - service_discovery against api-prod\n✗ 2026-02-17T16:05:18.275214 - brute_force against auth-server\n✗ 2026-02-17T16:05:18.308034 - brute_force against web-prod\n✗ 2026-02-17T16:05:18.335178 - sql_injection against users_db\n✗ 2026-02-17T16:05:18.359063 - sql_injection against logs_db\n✗ 2026-02-17T16:05:18.383114 - authentication_bypass against auth-server\n✗ 2026-02-17T16:05:18.407723 - authentication_bypass against web-prod\n✓ 2026-02-17T16:05:18.434966 - privilege_escalation against auth-server\n✓ 2026-02-17T16:05:18.459060 - privilege_escalation against web-prod\n✓ 2026-02-17T16:05:18.484202 - lateral_movement against auth-server\n✗ 2026-02-17T16:05:18.520078 - lateral_movement against web-prod\n✗ 2026-02-17T16:05:18.547800 - lateral_movement against api-prod\n✗ 2026-02-17T16:05:18.572606 - lateral_movement against users_db\n✓ 2026-02-17T16:05:18.593196 - lateral_movement against logs_db\n✓ 2026-02-17T16:05:18.622958 - data_access against auth-server\n✓ 2026-02-17T16:05:18.644084 - data_access against web-prod\n✓ 2026-02-17T16:05:18.675621 - data_access against api-prod\n✓ 2026-02-17T16:05:18.707807 - data_access against users_db\n✓ 2026-02-17T16:05:18.741124 - data_access against logs_db\n",
+    "technical_findings": [
+      {
+        "title": "Critical Severity Vulnerabilities",
+        "content": "Found 21 critical vulnerabilities:\n- SQL Injection on users_db\n  Vulnerability discovered via sql_injection attack on users_db\n- Authentication Bypass on auth-server\n  Vulnerability discovered via authentication_bypass attack on auth-server\n- Authentication Bypass on web-prod\n  Vulnerability discovered via authentication_bypass attack on web-prod\n- SQL Injection on users_db\n  Vulnerability discovered via sql_injection attack on users_db\n- Authentication Bypass on auth-server\n  Vulnerability discovered via authentication_bypass attack on auth-server\n- SQL Injection on users_db\n  Vulnerability discovered via sql_injection attack on users_db\n- SQL Injection on users_db\n  Vulnerability discovered via sql_injection attack on users_db\n- SQL Injection on logs_db\n  Vulnerability discovered via sql_injection attack on logs_db\n- SQL Injection on users_db\n  Vulnerability discovered via sql_injection attack on users_db\n- SQL Injection on users_db\n  Vulnerability discovered via sql_injection attack on users_db\n- SQL Injection on logs_db\n  Vulnerability discovered via sql_injection attack on logs_db\n- SQL Injection on logs_db\n  Vulnerability discovered via sql_injection attack on logs_db\n- SQL Injection on users_db\n  Vulnerability discovered via sql_injection attack on users_db\n- Authentication Bypass on auth-server\n  Vulnerability discovered via authentication_bypass attack on auth-server\n- SQL Injection on users_db\n  Vulnerability discovered via sql_injection attack on users_db\n- SQL Injection on logs_db\n  Vulnerability discovered via sql_injection attack on logs_db\n- Authentication Bypass on web-prod\n  Vulnerability discovered via authentication_bypass attack on web-prod\n- SQL Injection on logs_db\n  Vulnerability discovered via sql_injection attack on logs_db\n- SQL Injection on logs_db\n  Vulnerability discovered via sql_injection attack on logs_db\n- Authentication Bypass on auth-server\n  Vulnerability discovered via authentication_bypass attack on auth-server\n- Authentication Bypass on web-prod\n  Vulnerability discovered via authentication_bypass attack on web-prod\n"
+      },
+      {
+        "title": "High Severity Vulnerabilities",
+        "content": "Found 18 high vulnerabilities:\n- Weak Authentication on auth-server\n  Vulnerability discovered via brute_force attack on auth-server\n- Weak Authentication on web-prod\n  Vulnerability discovered via brute_force attack on web-prod\n- Privilege Escalation on auth-server\n  Vulnerability discovered via privilege_escalation attack on auth-server\n- Weak Authentication on auth-server\n  Vulnerability discovered via brute_force attack on auth-server\n- Privilege Escalation on web-prod\n  Vulnerability discovered via privilege_escalation attack on web-prod\n- Privilege Escalation on auth-server\n  Vulnerability discovered via privilege_escalation attack on auth-server\n- Weak Authentication on web-prod\n  Vulnerability discovered via brute_force attack on web-prod\n- Privilege Escalation on auth-server\n  Vulnerability discovered via privilege_escalation attack on auth-server\n- Privilege Escalation on web-prod\n  Vulnerability discovered via privilege_escalation attack on web-prod\n- Weak Authentication on auth-server\n  Vulnerability discovered via brute_force attack on auth-server\n- Privilege Escalation on auth-server\n  Vulnerability discovered via privilege_escalation attack on auth-server\n- Privilege Escalation on web-prod\n  Vulnerability discovered via privilege_escalation attack on web-prod\n- Privilege Escalation on auth-server\n  Vulnerability discovered via privilege_escalation attack on auth-server\n- Weak Authentication on auth-server\n  Vulnerability discovered via brute_force attack on auth-server\n- Weak Authentication on auth-server\n  Vulnerability discovered via brute_force attack on auth-server\n- Privilege Escalation on web-prod\n  Vulnerability discovered via privilege_escalation attack on web-prod\n- Privilege Escalation on auth-server\n  Vulnerability discovered via privilege_escalation attack on auth-server\n- Privilege Escalation on web-prod\n  Vulnerability discovered via privilege_escalation attack on web-prod\n"
+      },
+      {
+        "title": "Medium Severity Vulnerabilities",
+        "content": "Found 134 medium vulnerabilities:\n- Security Vulnerability from port_scan on auth-server\n  Vulnerability discovered via port_scan attack on auth-server\n- Security Vulnerability from port_scan on web-prod\n  Vulnerability discovered via port_scan attack on web-prod\n- Security Vulnerability from port_scan on api-prod\n  Vulnerability discovered via port_scan attack on api-prod\n- Security Vulnerability from service_discovery on auth-server\n  Vulnerability discovered via service_discovery attack on auth-server\n- Security Vulnerability from service_discovery on web-prod\n  Vulnerability discovered via service_discovery attack on web-prod\n- Security Vulnerability from service_discovery on api-prod\n  Vulnerability discovered via service_discovery attack on api-prod\n- Security Vulnerability from lateral_movement on web-prod\n  Vulnerability discovered via lateral_movement attack on web-prod\n- Security Vulnerability from lateral_movement on users_db\n  Vulnerability discovered via lateral_movement attack on users_db\n- Security Vulnerability from data_access on auth-server\n  Vulnerability discovered via data_access attack on auth-server\n- Security Vulnerability from data_access on api-prod\n  Vulnerability discovered via data_access attack on api-prod\n- Security Vulnerability from data_access on users_db\n  Vulnerability discovered via data_access attack on users_db\n- Security Vulnerability from port_scan on auth-server\n  Vulnerability discovered via port_scan attack on auth-server\n- Security Vulnerability from port_scan on web-prod\n  Vulnerability discovered via port_scan attack on web-prod\n- Security Vulnerability from port_scan on api-prod\n  Vulnerability discovered via port_scan attack on api-prod\n- Security Vulnerability from service_discovery on auth-server\n  Vulnerability discovered via service_discovery attack on auth-server\n- Security Vulnerability from service_discovery on web-prod\n  Vulnerability discovered via service_discovery attack on web-prod\n- Security Vulnerability from service_discovery on api-prod\n  Vulnerability discovered via service_discovery attack on api-prod\n- Security Vulnerability from lateral_movement on web-prod\n  Vulnerability discovered via lateral_movement attack on web-prod\n- Security Vulnerability from lateral_movement on logs_db\n  Vulnerability discovered via lateral_movement attack on logs_db\n- Security Vulnerability from data_access on api-prod\n  Vulnerability discovered via data_access attack on api-prod\n- Security Vulnerability from data_access on users_db\n  Vulnerability discovered via data_access attack on users_db\n- Security Vulnerability from data_access on logs_db\n  Vulnerability discovered via data_access attack on logs_db\n- Security Vulnerability from port_scan on auth-server\n  Vulnerability discovered via port_scan attack on auth-server\n- Security Vulnerability from port_scan on web-prod\n  Vulnerability discovered via port_scan attack on web-prod\n- Security Vulnerability from port_scan on api-prod\n  Vulnerability discovered via port_scan attack on api-prod\n- Security Vulnerability from service_discovery on auth-server\n  Vulnerability discovered via service_discovery attack on auth-server\n- Security Vulnerability from service_discovery on web-prod\n  Vulnerability discovered via service_discovery attack on web-prod\n- Security Vulnerability from service_discovery on api-prod\n  Vulnerability discovered via service_discovery attack on api-prod\n- Security Vulnerability from lateral_movement on auth-server\n  Vulnerability discovered via lateral_movement attack on auth-server\n- Security Vulnerability from lateral_movement on logs_db\n  Vulnerability discovered via lateral_movement attack on logs_db\n- Security Vulnerability from data_access on web-prod\n  Vulnerability discovered via data_access attack on web-prod\n- Security Vulnerability from data_access on api-prod\n  Vulnerability discovered via data_access attack on api-prod\n- Security Vulnerability from data_access on users_db\n  Vulnerability discovered via data_access attack on users_db\n- Security Vulnerability from data_access on logs_db\n  Vulnerability discovered via data_access attack on logs_db\n- Security Vulnerability from port_scan on auth-server\n  Vulnerability discovered via port_scan attack on auth-server\n- Security Vulnerability from port_scan on web-prod\n  Vulnerability discovered via port_scan attack on web-prod\n- Security Vulnerability from port_scan on api-prod\n  Vulnerability discovered via port_scan attack on api-prod\n- Security Vulnerability from service_discovery on auth-server\n  Vulnerability discovered via service_discovery attack on auth-server\n- Security Vulnerability from service_discovery on web-prod\n  Vulnerability discovered via service_discovery attack on web-prod\n- Security Vulnerability from service_discovery on api-prod\n  Vulnerability discovered via service_discovery attack on api-prod\n- Security Vulnerability from lateral_movement on web-prod\n  Vulnerability discovered via lateral_movement attack on web-prod\n- Security Vulnerability from lateral_movement on users_db\n  Vulnerability discovered via lateral_movement attack on users_db\n- Security Vulnerability from lateral_movement on logs_db\n  Vulnerability discovered via lateral_movement attack on logs_db\n- Security Vulnerability from data_access on auth-server\n  Vulnerability discovered via data_access attack on auth-server\n- Security Vulnerability from data_access on api-prod\n  Vulnerability discovered via data_access attack on api-prod\n- Security Vulnerability from data_access on logs_db\n  Vulnerability discovered via data_access attack on logs_db\n- Security Vulnerability from port_scan on auth-server\n  Vulnerability discovered via port_scan attack on auth-server\n- Security Vulnerability from port_scan on web-prod\n  Vulnerability discovered via port_scan attack on web-prod\n- Security Vulnerability from port_scan on api-prod\n  Vulnerability discovered via port_scan attack on api-prod\n- Security Vulnerability from service_discovery on web-prod\n  Vulnerability discovered via service_discovery attack on web-prod\n- Security Vulnerability from service_discovery on api-prod\n  Vulnerability discovered via service_discovery attack on api-prod\n- Security Vulnerability from lateral_movement on auth-server\n  Vulnerability discovered via lateral_movement attack on auth-server\n- Security Vulnerability from lateral_movement on users_db\n  Vulnerability discovered via lateral_movement attack on users_db\n- Security Vulnerability from lateral_movement on logs_db\n  Vulnerability discovered via lateral_movement attack on logs_db\n- Security Vulnerability from data_access on web-prod\n  Vulnerability discovered via data_access attack on web-prod\n- Security Vulnerability from data_access on api-prod\n  Vulnerability discovered via data_access attack on api-prod\n- Security Vulnerability from data_access on users_db\n  Vulnerability discovered via data_access attack on users_db\n- Security Vulnerability from data_access on logs_db\n  Vulnerability discovered via data_access attack on logs_db\n- Security Vulnerability from port_scan on auth-server\n  Vulnerability discovered via port_scan attack on auth-server\n- Security Vulnerability from port_scan on web-prod\n  Vulnerability discovered via port_scan attack on web-prod\n- Security Vulnerability from port_scan on api-prod\n  Vulnerability discovered via port_scan attack on api-prod\n- Security Vulnerability from service_discovery on auth-server\n  Vulnerability discovered via service_discovery attack on auth-server\n- Security Vulnerability from service_discovery on web-prod\n  Vulnerability discovered via service_discovery attack on web-prod\n- Security Vulnerability from service_discovery on api-prod\n  Vulnerability discovered via service_discovery attack on api-prod\n- Security Vulnerability from lateral_movement on web-prod\n  Vulnerability discovered via lateral_movement attack on web-prod\n- Security Vulnerability from lateral_movement on api-prod\n  Vulnerability discovered via lateral_movement attack on api-prod\n- Security Vulnerability from data_access on api-prod\n  Vulnerability discovered via data_access attack on api-prod\n- Security Vulnerability from data_access on users_db\n  Vulnerability discovered via data_access attack on users_db\n- Security Vulnerability from data_access on logs_db\n  Vulnerability discovered via data_access attack on logs_db\n- Security Vulnerability from port_scan on auth-server\n  Vulnerability discovered via port_scan attack on auth-server\n- Security Vulnerability from port_scan on web-prod\n  Vulnerability discovered via port_scan attack on web-prod\n- Security Vulnerability from port_scan on api-prod\n  Vulnerability discovered via port_scan attack on api-prod\n- Security Vulnerability from service_discovery on web-prod\n  Vulnerability discovered via service_discovery attack on web-prod\n- Security Vulnerability from service_discovery on api-prod\n  Vulnerability discovered via service_discovery attack on api-prod\n- Security Vulnerability from lateral_movement on api-prod\n  Vulnerability discovered via lateral_movement attack on api-prod\n- Security Vulnerability from lateral_movement on logs_db\n  Vulnerability discovered via lateral_movement attack on logs_db\n- Security Vulnerability from data_access on auth-server\n  Vulnerability discovered via data_access attack on auth-server\n- Security Vulnerability from data_access on web-prod\n  Vulnerability discovered via data_access attack on web-prod\n- Security Vulnerability from data_access on users_db\n  Vulnerability discovered via data_access attack on users_db\n- Security Vulnerability from data_access on logs_db\n  Vulnerability discovered via data_access attack on logs_db\n- Security Vulnerability from port_scan on auth-server\n  Vulnerability discovered via port_scan attack on auth-server\n- Security Vulnerability from port_scan on web-prod\n  Vulnerability discovered via port_scan attack on web-prod\n- Security Vulnerability from port_scan on api-prod\n  Vulnerability discovered via port_scan attack on api-prod\n- Security Vulnerability from service_discovery on auth-server\n  Vulnerability discovered via service_discovery attack on auth-server\n- Security Vulnerability from service_discovery on web-prod\n  Vulnerability discovered via service_discovery attack on web-prod\n- Security Vulnerability from service_discovery on api-prod\n  Vulnerability discovered via service_discovery attack on api-prod\n- Security Vulnerability from lateral_movement on api-prod\n  Vulnerability discovered via lateral_movement attack on api-prod\n- Security Vulnerability from data_access on auth-server\n  Vulnerability discovered via data_access attack on auth-server\n- Security Vulnerability from data_access on api-prod\n  Vulnerability discovered via data_access attack on api-prod\n- Security Vulnerability from data_access on users_db\n  Vulnerability discovered via data_access attack on users_db\n- Security Vulnerability from port_scan on auth-server\n  Vulnerability discovered via port_scan attack on auth-server\n- Security Vulnerability from port_scan on web-prod\n  Vulnerability discovered via port_scan attack on web-prod\n- Security Vulnerability from port_scan on api-prod\n  Vulnerability discovered via port_scan attack on api-prod\n- Security Vulnerability from service_discovery on auth-server\n  Vulnerability discovered via service_discovery attack on auth-server\n- Security Vulnerability from service_discovery on web-prod\n  Vulnerability discovered via service_discovery attack on web-prod\n- Security Vulnerability from service_discovery on api-prod\n  Vulnerability discovered via service_discovery attack on api-prod\n- Security Vulnerability from lateral_movement on auth-server\n  Vulnerability discovered via lateral_movement attack on auth-server\n- Security Vulnerability from lateral_movement on web-prod\n  Vulnerability discovered via lateral_movement attack on web-prod\n- Security Vulnerability from lateral_movement on api-prod\n  Vulnerability discovered via lateral_movement attack on api-prod\n- Security Vulnerability from data_access on web-prod\n  Vulnerability discovered via data_access attack on web-prod\n- Security Vulnerability from data_access on logs_db\n  Vulnerability discovered via data_access attack on logs_db\n- Security Vulnerability from port_scan on auth-server\n  Vulnerability discovered via port_scan attack on auth-server\n- Security Vulnerability from port_scan on web-prod\n  Vulnerability discovered via port_scan attack on web-prod\n- Security Vulnerability from port_scan on api-prod\n  Vulnerability discovered via port_scan attack on api-prod\n- Security Vulnerability from service_discovery on auth-server\n  Vulnerability discovered via service_discovery attack on auth-server\n- Security Vulnerability from service_discovery on web-prod\n  Vulnerability discovered via service_discovery attack on web-prod\n- Security Vulnerability from service_discovery on api-prod\n  Vulnerability discovered via service_discovery attack on api-prod\n- Security Vulnerability from lateral_movement on api-prod\n  Vulnerability discovered via lateral_movement attack on api-prod\n- Security Vulnerability from data_access on users_db\n  Vulnerability discovered via data_access attack on users_db\n- Security Vulnerability from data_access on logs_db\n  Vulnerability discovered via data_access attack on logs_db\n- Security Vulnerability from port_scan on auth-server\n  Vulnerability discovered via port_scan attack on auth-server\n- Security Vulnerability from port_scan on web-prod\n  Vulnerability discovered via port_scan attack on web-prod\n- Security Vulnerability from port_scan on api-prod\n  Vulnerability discovered via port_scan attack on api-prod\n- Security Vulnerability from service_discovery on auth-server\n  Vulnerability discovered via service_discovery attack on auth-server\n- Security Vulnerability from service_discovery on web-prod\n  Vulnerability discovered via service_discovery attack on web-prod\n- Security Vulnerability from service_discovery on api-prod\n  Vulnerability discovered via service_discovery attack on api-prod\n- Security Vulnerability from lateral_movement on logs_db\n  Vulnerability discovered via lateral_movement attack on logs_db\n- Security Vulnerability from data_access on auth-server\n  Vulnerability discovered via data_access attack on auth-server\n- Security Vulnerability from data_access on web-prod\n  Vulnerability discovered via data_access attack on web-prod\n- Security Vulnerability from data_access on api-prod\n  Vulnerability discovered via data_access attack on api-prod\n- Security Vulnerability from data_access on logs_db\n  Vulnerability discovered via data_access attack on logs_db\n- Security Vulnerability from port_scan on auth-server\n  Vulnerability discovered via port_scan attack on auth-server\n- Security Vulnerability from port_scan on web-prod\n  Vulnerability discovered via port_scan attack on web-prod\n- Security Vulnerability from port_scan on api-prod\n  Vulnerability discovered via port_scan attack on api-prod\n- Security Vulnerability from service_discovery on auth-server\n  Vulnerability discovered via service_discovery attack on auth-server\n- Security Vulnerability from service_discovery on web-prod\n  Vulnerability discovered via service_discovery attack on web-prod\n- Security Vulnerability from service_discovery on api-prod\n  Vulnerability discovered via service_discovery attack on api-prod\n- Security Vulnerability from lateral_movement on auth-server\n  Vulnerability discovered via lateral_movement attack on auth-server\n- Security Vulnerability from lateral_movement on logs_db\n  Vulnerability discovered via lateral_movement attack on logs_db\n- Security Vulnerability from data_access on auth-server\n  Vulnerability discovered via data_access attack on auth-server\n- Security Vulnerability from data_access on web-prod\n  Vulnerability discovered via data_access attack on web-prod\n- Security Vulnerability from data_access on api-prod\n  Vulnerability discovered via data_access attack on api-prod\n- Security Vulnerability from data_access on users_db\n  Vulnerability discovered via data_access attack on users_db\n- Security Vulnerability from data_access on logs_db\n  Vulnerability discovered via data_access attack on logs_db\n"
+      }
+    ],
+    "vulnerability_analysis": "Analysis of 173 discovered vulnerabilities:\n\nSeverity Breakdown:\n- Medium: 134\n- High: 18\n- Critical: 21\n\nAttack Vector Analysis:\n- port_scan: 36\n- service_discovery: 34\n- brute_force: 7\n- sql_injection: 14\n- authentication_bypass: 7\n- lateral_movement: 24\n- data_access: 40\n- privilege_escalation: 11\n",
+    "mitigation_checklist": [
+      {
+        "id": "mit_7f32e5ab",
+        "type": "immediate",
+        "title": "Address SQL Injection on users_db",
+        "description": "Implement proper security controls to prevent sql_injection attacks",
+        "target_vulnerability": "vuln_0e275e62",
+        "priority": 4,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_bb5ca8df",
+        "type": "immediate",
+        "title": "Address Authentication Bypass on auth-server",
+        "description": "Implement proper security controls to prevent authentication_bypass attacks",
+        "target_vulnerability": "vuln_6933412b",
+        "priority": 4,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_cd387d2a",
+        "type": "immediate",
+        "title": "Address Authentication Bypass on web-prod",
+        "description": "Implement proper security controls to prevent authentication_bypass attacks",
+        "target_vulnerability": "vuln_540eed9f",
+        "priority": 4,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_ae201560",
+        "type": "immediate",
+        "title": "Address SQL Injection on users_db",
+        "description": "Implement proper security controls to prevent sql_injection attacks",
+        "target_vulnerability": "vuln_186bcadb",
+        "priority": 4,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_ee8624b5",
+        "type": "immediate",
+        "title": "Address Authentication Bypass on auth-server",
+        "description": "Implement proper security controls to prevent authentication_bypass attacks",
+        "target_vulnerability": "vuln_5291bdf4",
+        "priority": 4,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_1d08fb98",
+        "type": "immediate",
+        "title": "Address SQL Injection on users_db",
+        "description": "Implement proper security controls to prevent sql_injection attacks",
+        "target_vulnerability": "vuln_13d4d071",
+        "priority": 4,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_1c054efd",
+        "type": "immediate",
+        "title": "Address SQL Injection on users_db",
+        "description": "Implement proper security controls to prevent sql_injection attacks",
+        "target_vulnerability": "vuln_3f107cfa",
+        "priority": 4,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_d76570b7",
+        "type": "immediate",
+        "title": "Address SQL Injection on logs_db",
+        "description": "Implement proper security controls to prevent sql_injection attacks",
+        "target_vulnerability": "vuln_5b33533d",
+        "priority": 4,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_02036d96",
+        "type": "immediate",
+        "title": "Address SQL Injection on users_db",
+        "description": "Implement proper security controls to prevent sql_injection attacks",
+        "target_vulnerability": "vuln_4e788175",
+        "priority": 4,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_13f9ef28",
+        "type": "immediate",
+        "title": "Address SQL Injection on users_db",
+        "description": "Implement proper security controls to prevent sql_injection attacks",
+        "target_vulnerability": "vuln_933a9943",
+        "priority": 4,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_1482aa4c",
+        "type": "immediate",
+        "title": "Address SQL Injection on logs_db",
+        "description": "Implement proper security controls to prevent sql_injection attacks",
+        "target_vulnerability": "vuln_6a21cbf8",
+        "priority": 4,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_a2fa182e",
+        "type": "immediate",
+        "title": "Address SQL Injection on logs_db",
+        "description": "Implement proper security controls to prevent sql_injection attacks",
+        "target_vulnerability": "vuln_ed88aca9",
+        "priority": 4,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_fff97d93",
+        "type": "immediate",
+        "title": "Address SQL Injection on users_db",
+        "description": "Implement proper security controls to prevent sql_injection attacks",
+        "target_vulnerability": "vuln_dd7353e0",
+        "priority": 4,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_13cd24fd",
+        "type": "immediate",
+        "title": "Address Authentication Bypass on auth-server",
+        "description": "Implement proper security controls to prevent authentication_bypass attacks",
+        "target_vulnerability": "vuln_fffb121e",
+        "priority": 4,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_0d5af10a",
+        "type": "immediate",
+        "title": "Address SQL Injection on users_db",
+        "description": "Implement proper security controls to prevent sql_injection attacks",
+        "target_vulnerability": "vuln_09e4fb48",
+        "priority": 4,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_b2cd704d",
+        "type": "immediate",
+        "title": "Address SQL Injection on logs_db",
+        "description": "Implement proper security controls to prevent sql_injection attacks",
+        "target_vulnerability": "vuln_1b35b0c5",
+        "priority": 4,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_a35ec2b3",
+        "type": "immediate",
+        "title": "Address Authentication Bypass on web-prod",
+        "description": "Implement proper security controls to prevent authentication_bypass attacks",
+        "target_vulnerability": "vuln_e356ad8b",
+        "priority": 4,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_8c0fafc6",
+        "type": "immediate",
+        "title": "Address SQL Injection on logs_db",
+        "description": "Implement proper security controls to prevent sql_injection attacks",
+        "target_vulnerability": "vuln_e92a6b5b",
+        "priority": 4,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_496984b2",
+        "type": "immediate",
+        "title": "Address SQL Injection on logs_db",
+        "description": "Implement proper security controls to prevent sql_injection attacks",
+        "target_vulnerability": "vuln_222ba18f",
+        "priority": 4,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_0be67769",
+        "type": "immediate",
+        "title": "Address Authentication Bypass on auth-server",
+        "description": "Implement proper security controls to prevent authentication_bypass attacks",
+        "target_vulnerability": "vuln_eb3e8051",
+        "priority": 4,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_6fe8e59c",
+        "type": "immediate",
+        "title": "Address Authentication Bypass on web-prod",
+        "description": "Implement proper security controls to prevent authentication_bypass attacks",
+        "target_vulnerability": "vuln_db8e2801",
+        "priority": 4,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_82d079cb",
+        "type": "immediate",
+        "title": "Address Weak Authentication on auth-server",
+        "description": "Implement proper security controls to prevent brute_force attacks",
+        "target_vulnerability": "vuln_2e4d1151",
+        "priority": 3,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_7c578a33",
+        "type": "immediate",
+        "title": "Address Weak Authentication on web-prod",
+        "description": "Implement proper security controls to prevent brute_force attacks",
+        "target_vulnerability": "vuln_f0489d9c",
+        "priority": 3,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_83690e40",
+        "type": "immediate",
+        "title": "Address Privilege Escalation on auth-server",
+        "description": "Implement proper security controls to prevent privilege_escalation attacks",
+        "target_vulnerability": "vuln_b95cb912",
+        "priority": 3,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_c0037471",
+        "type": "immediate",
+        "title": "Address Weak Authentication on auth-server",
+        "description": "Implement proper security controls to prevent brute_force attacks",
+        "target_vulnerability": "vuln_1968fc7c",
+        "priority": 3,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_ee3b2bd5",
+        "type": "immediate",
+        "title": "Address Privilege Escalation on web-prod",
+        "description": "Implement proper security controls to prevent privilege_escalation attacks",
+        "target_vulnerability": "vuln_7fd20b77",
+        "priority": 3,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_50a15ceb",
+        "type": "immediate",
+        "title": "Address Privilege Escalation on auth-server",
+        "description": "Implement proper security controls to prevent privilege_escalation attacks",
+        "target_vulnerability": "vuln_a3e08343",
+        "priority": 3,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_950de69b",
+        "type": "immediate",
+        "title": "Address Weak Authentication on web-prod",
+        "description": "Implement proper security controls to prevent brute_force attacks",
+        "target_vulnerability": "vuln_220b31a3",
+        "priority": 3,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_e58abaa8",
+        "type": "immediate",
+        "title": "Address Privilege Escalation on auth-server",
+        "description": "Implement proper security controls to prevent privilege_escalation attacks",
+        "target_vulnerability": "vuln_c5e23a29",
+        "priority": 3,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_f3d678f6",
+        "type": "immediate",
+        "title": "Address Privilege Escalation on web-prod",
+        "description": "Implement proper security controls to prevent privilege_escalation attacks",
+        "target_vulnerability": "vuln_4d04440f",
+        "priority": 3,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_5a4dd334",
+        "type": "immediate",
+        "title": "Address Weak Authentication on auth-server",
+        "description": "Implement proper security controls to prevent brute_force attacks",
+        "target_vulnerability": "vuln_b340197f",
+        "priority": 3,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_c4363141",
+        "type": "immediate",
+        "title": "Address Privilege Escalation on auth-server",
+        "description": "Implement proper security controls to prevent privilege_escalation attacks",
+        "target_vulnerability": "vuln_fcb60fcd",
+        "priority": 3,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_095a7e57",
+        "type": "immediate",
+        "title": "Address Privilege Escalation on web-prod",
+        "description": "Implement proper security controls to prevent privilege_escalation attacks",
+        "target_vulnerability": "vuln_d280c580",
+        "priority": 3,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_18706061",
+        "type": "immediate",
+        "title": "Address Privilege Escalation on auth-server",
+        "description": "Implement proper security controls to prevent privilege_escalation attacks",
+        "target_vulnerability": "vuln_d2574c9d",
+        "priority": 3,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_12f6493f",
+        "type": "immediate",
+        "title": "Address Weak Authentication on auth-server",
+        "description": "Implement proper security controls to prevent brute_force attacks",
+        "target_vulnerability": "vuln_9a6116e1",
+        "priority": 3,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_e5ee73ba",
+        "type": "immediate",
+        "title": "Address Weak Authentication on auth-server",
+        "description": "Implement proper security controls to prevent brute_force attacks",
+        "target_vulnerability": "vuln_b708fd3f",
+        "priority": 3,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_00311182",
+        "type": "immediate",
+        "title": "Address Privilege Escalation on web-prod",
+        "description": "Implement proper security controls to prevent privilege_escalation attacks",
+        "target_vulnerability": "vuln_5df5a09c",
+        "priority": 3,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_995cbf32",
+        "type": "immediate",
+        "title": "Address Privilege Escalation on auth-server",
+        "description": "Implement proper security controls to prevent privilege_escalation attacks",
+        "target_vulnerability": "vuln_e4e952cd",
+        "priority": 3,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_e42a074e",
+        "type": "immediate",
+        "title": "Address Privilege Escalation on web-prod",
+        "description": "Implement proper security controls to prevent privilege_escalation attacks",
+        "target_vulnerability": "vuln_8744d256",
+        "priority": 3,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_94c78caf",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on auth-server",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_e708b1d5",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_d9d561b5",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on web-prod",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_ae1e467f",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_d0b088ab",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on api-prod",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_1a171c63",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_95f7a7fb",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on auth-server",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_bff33242",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_57310c7f",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on web-prod",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_6a269b62",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_22f00564",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on api-prod",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_664ceb18",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_6bf8a937",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from lateral_movement on web-prod",
+        "description": "Implement proper security controls to prevent lateral_movement attacks",
+        "target_vulnerability": "vuln_a077707d",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_a8315577",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from lateral_movement on users_db",
+        "description": "Implement proper security controls to prevent lateral_movement attacks",
+        "target_vulnerability": "vuln_ba5f8029",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_c420a36b",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on auth-server",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_653c69eb",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_40e705cb",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on api-prod",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_999ad4cd",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_431c7eb6",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on users_db",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_ec28bcae",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_f81c03e4",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on auth-server",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_1ff07743",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_b88245f1",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on web-prod",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_36c0a1d0",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_43da4ab6",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on api-prod",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_69fb1d38",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_2ccaca4a",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on auth-server",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_203112de",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_80f75903",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on web-prod",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_9c9ec6fa",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_1288791c",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on api-prod",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_1c5422d7",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_171adbcb",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from lateral_movement on web-prod",
+        "description": "Implement proper security controls to prevent lateral_movement attacks",
+        "target_vulnerability": "vuln_f47f1c1d",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_f201f95d",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from lateral_movement on logs_db",
+        "description": "Implement proper security controls to prevent lateral_movement attacks",
+        "target_vulnerability": "vuln_4efd640e",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_81fb176a",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on api-prod",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_9b7c58d3",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_0aee32a8",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on users_db",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_c2e1f057",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_10bb0828",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on logs_db",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_95435bf3",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_0b3722a2",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on auth-server",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_635d3e5e",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_721ef60d",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on web-prod",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_bad2e259",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_80b63bfa",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on api-prod",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_574e62ab",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_19685aec",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on auth-server",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_b36733fa",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_78704d82",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on web-prod",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_03fb836a",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_b789e587",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on api-prod",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_60106201",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_fae702af",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from lateral_movement on auth-server",
+        "description": "Implement proper security controls to prevent lateral_movement attacks",
+        "target_vulnerability": "vuln_5dd599d2",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_8e62cd77",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from lateral_movement on logs_db",
+        "description": "Implement proper security controls to prevent lateral_movement attacks",
+        "target_vulnerability": "vuln_f2b5471e",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_895bd9b8",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on web-prod",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_c1fa9061",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_f3ffaee8",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on api-prod",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_3f5f3387",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_10fc7f19",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on users_db",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_de162cf3",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_c937f859",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on logs_db",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_be7600cd",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_c5bfb4df",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on auth-server",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_7c289324",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_d9528fff",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on web-prod",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_686a0c44",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_e04b3c18",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on api-prod",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_3a532bc9",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_7146e134",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on auth-server",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_abdc90c2",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_eaaee0db",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on web-prod",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_77ac152a",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_5dc276d0",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on api-prod",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_760ec92b",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_41c50113",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from lateral_movement on web-prod",
+        "description": "Implement proper security controls to prevent lateral_movement attacks",
+        "target_vulnerability": "vuln_8c252cf6",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_45ffd2f4",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from lateral_movement on users_db",
+        "description": "Implement proper security controls to prevent lateral_movement attacks",
+        "target_vulnerability": "vuln_f5e0df37",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_a5d32142",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from lateral_movement on logs_db",
+        "description": "Implement proper security controls to prevent lateral_movement attacks",
+        "target_vulnerability": "vuln_27218448",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_4695fdba",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on auth-server",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_f6346577",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_44265c96",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on api-prod",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_a7ae1f63",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_f0c0357d",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on logs_db",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_4619c155",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_a3d061cc",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on auth-server",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_ee3c1052",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_6143a85b",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on web-prod",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_4817742d",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_beef3b31",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on api-prod",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_5714c5dd",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_45561014",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on web-prod",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_4abbbc2c",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_418dc18c",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on api-prod",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_2dc06192",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_32571440",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from lateral_movement on auth-server",
+        "description": "Implement proper security controls to prevent lateral_movement attacks",
+        "target_vulnerability": "vuln_5f2abca9",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_3bf83d9b",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from lateral_movement on users_db",
+        "description": "Implement proper security controls to prevent lateral_movement attacks",
+        "target_vulnerability": "vuln_68ddf66a",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_72d1a39e",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from lateral_movement on logs_db",
+        "description": "Implement proper security controls to prevent lateral_movement attacks",
+        "target_vulnerability": "vuln_3fdc4607",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_4678df64",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on web-prod",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_a1f1d1b1",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_32876a18",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on api-prod",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_37ec4cc9",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_495fb96e",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on users_db",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_dd34c6f6",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_82d2018a",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on logs_db",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_e79eb530",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_767f0c57",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on auth-server",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_8b446c8c",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_ee733f7c",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on web-prod",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_eadb85d7",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_a1e111ee",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on api-prod",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_b8e06077",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_3b5742d6",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on auth-server",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_f0801c7e",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_ec6f4dc2",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on web-prod",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_e241a447",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_04b9f99c",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on api-prod",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_15fa2364",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_acba9edd",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from lateral_movement on web-prod",
+        "description": "Implement proper security controls to prevent lateral_movement attacks",
+        "target_vulnerability": "vuln_2edefb82",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_48f4d57e",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from lateral_movement on api-prod",
+        "description": "Implement proper security controls to prevent lateral_movement attacks",
+        "target_vulnerability": "vuln_289d3fcb",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_62064eaf",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on api-prod",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_1547b683",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_3c42456c",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on users_db",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_8093ad4b",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_0daafc75",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on logs_db",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_1c1ba4da",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_16ec78c0",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on auth-server",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_f62b4858",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_d81aec3d",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on web-prod",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_58703c3e",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_602c275f",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on api-prod",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_ab557817",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_a99577e1",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on web-prod",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_ccd2cc6d",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_4f71e5a6",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on api-prod",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_fc58c774",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_f40d45b6",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from lateral_movement on api-prod",
+        "description": "Implement proper security controls to prevent lateral_movement attacks",
+        "target_vulnerability": "vuln_aac04cea",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_d2128b61",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from lateral_movement on logs_db",
+        "description": "Implement proper security controls to prevent lateral_movement attacks",
+        "target_vulnerability": "vuln_b18bad9b",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_f10feb61",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on auth-server",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_900680cd",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_039e1fbb",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on web-prod",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_0ca6317e",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_16d2291b",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on users_db",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_0c6e7ba1",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_7dbb34e8",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on logs_db",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_afc59db4",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_40fc1d95",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on auth-server",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_b837bbe7",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_af9d5e85",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on web-prod",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_5b101f2b",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_391e8071",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on api-prod",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_0623dd26",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_76c3c4aa",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on auth-server",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_e186687a",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_109d57f7",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on web-prod",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_1d19da8e",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_bbe37b88",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on api-prod",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_6abdd7f4",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_35ab46e3",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from lateral_movement on api-prod",
+        "description": "Implement proper security controls to prevent lateral_movement attacks",
+        "target_vulnerability": "vuln_efdacb5d",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_1a41a11c",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on auth-server",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_c2505c55",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_93b8ec59",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on api-prod",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_90ab0f14",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_3248f900",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on users_db",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_bd25228c",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_dd740ee3",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on auth-server",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_51dc975a",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_8972c79a",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on web-prod",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_c90e02c5",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_2c137d77",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on api-prod",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_71f1c4ad",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_889bbeec",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on auth-server",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_9601572a",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_69ddee69",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on web-prod",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_1d834572",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_8b9ad8f5",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on api-prod",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_865be06f",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_4c4524f6",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from lateral_movement on auth-server",
+        "description": "Implement proper security controls to prevent lateral_movement attacks",
+        "target_vulnerability": "vuln_5a02379a",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_17b3ed48",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from lateral_movement on web-prod",
+        "description": "Implement proper security controls to prevent lateral_movement attacks",
+        "target_vulnerability": "vuln_13b425ce",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_ea4f7e6a",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from lateral_movement on api-prod",
+        "description": "Implement proper security controls to prevent lateral_movement attacks",
+        "target_vulnerability": "vuln_0a1966b3",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_40d8c485",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on web-prod",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_3ac23df5",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_09600759",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on logs_db",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_59727f41",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_392e000f",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on auth-server",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_9a6d1939",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_fbcaa14d",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on web-prod",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_84154373",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_49f395b3",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on api-prod",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_51ddeda4",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_02802df7",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on auth-server",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_3cdf0f86",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_7a3c55bb",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on web-prod",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_cc437706",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_e51eea91",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on api-prod",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_62e49e6d",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_963fba59",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from lateral_movement on api-prod",
+        "description": "Implement proper security controls to prevent lateral_movement attacks",
+        "target_vulnerability": "vuln_c1b8b98b",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_92c6e66f",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on users_db",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_28adfc81",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_4f32fb11",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on logs_db",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_ba49486d",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_f86d851b",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on auth-server",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_a8bbfe07",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_ccbfac07",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on web-prod",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_ba7809f6",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_4d8795d2",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on api-prod",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_78ea33c5",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_707c1d46",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on auth-server",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_88d51c27",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_bee47e08",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on web-prod",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_8633f1a9",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_018b9ff2",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on api-prod",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_bf1eabfe",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_3d379703",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from lateral_movement on logs_db",
+        "description": "Implement proper security controls to prevent lateral_movement attacks",
+        "target_vulnerability": "vuln_bf9d0455",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_490aaf20",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on auth-server",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_3336f331",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_b14c7971",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on web-prod",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_33e12ccd",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_460cbc57",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on api-prod",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_9d7ac774",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_f0fecd0b",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on logs_db",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_073872ae",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_05bc8e47",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on auth-server",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_9219ab90",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_f0a754f0",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on web-prod",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_ed8c0e3f",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_ad313b91",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from port_scan on api-prod",
+        "description": "Implement proper security controls to prevent port_scan attacks",
+        "target_vulnerability": "vuln_cb485041",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_df1182d4",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on auth-server",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_b5529bd1",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_d72bf0a0",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on web-prod",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_021a4488",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_0ec21515",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from service_discovery on api-prod",
+        "description": "Implement proper security controls to prevent service_discovery attacks",
+        "target_vulnerability": "vuln_52fb04de",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_0cdebacb",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from lateral_movement on auth-server",
+        "description": "Implement proper security controls to prevent lateral_movement attacks",
+        "target_vulnerability": "vuln_53ebd1a4",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_37a179fc",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from lateral_movement on logs_db",
+        "description": "Implement proper security controls to prevent lateral_movement attacks",
+        "target_vulnerability": "vuln_9ab28ad9",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_854657a5",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on auth-server",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_a389aa26",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_2bdf2b3d",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on web-prod",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_8b285fef",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_20b077e0",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on api-prod",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_6dbb9319",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_50cbee40",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on users_db",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_f7b2b880",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      },
+      {
+        "id": "mit_d90011a5",
+        "type": "short_term",
+        "title": "Address Security Vulnerability from data_access on logs_db",
+        "description": "Implement proper security controls to prevent data_access attacks",
+        "target_vulnerability": "vuln_798b4ea9",
+        "priority": 2,
+        "effort": "Medium",
+        "impact": "High",
+        "steps": [
+          "Review vulnerability details",
+          "Apply security patches",
+          "Configure security controls",
+          "Validate fix effectiveness"
+        ]
+      }
+    ],
+    "recommendations": "Security Recommendations:\n\n1. Implement strong authentication mechanisms including MFA\n2. Enforce complex password policies\n3. Implement account lockout policies\n\n1. Implement input validation and parameterized queries\n2. Use web application firewalls\n3. Regularly patch database systems\n\n1. Implement principle of least privilege\n2. Regularly review user permissions\n3. Monitor for privilege escalation attempts\n\n4. Conduct regular security assessments\n5. Implement continuous monitoring\n6. Maintain security awareness training"
+  },
+  "saved_at": "2026-02-17T16:05:18.886999"
+}

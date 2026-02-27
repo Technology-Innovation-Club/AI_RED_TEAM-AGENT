@@ -1,0 +1,460 @@
+{
+  "networks": [
+    {
+      "id": "wifi_open_074c4869",
+      "type": "wifi",
+      "role": "guest_access",
+      "configuration": {
+        "ssid": "Guest_WiFi",
+        "encryption": "open",
+        "password_policy": "none",
+        "broadcasting": true,
+        "signal_strength": 75
+      },
+      "security_flags": {
+        "client_isolation": false,
+        "network_segmentation": true,
+        "monitoring_enabled": false
+      },
+      "known_issues": [
+        "Open authentication (no encryption)",
+        "Client isolation disabled",
+        "Wireless monitoring not enabled"
+      ],
+      "vulnerabilities": [
+        "unauthorized_access",
+        "traffic_interception",
+        "man_in_the_middle"
+      ]
+    },
+    {
+      "id": "wifi_wpa2_c2dce492",
+      "type": "wifi",
+      "role": "internal_access",
+      "configuration": {
+        "ssid": "Office_WiFi",
+        "encryption": "WPA2-PSK",
+        "password_policy": "weak",
+        "broadcasting": true,
+        "signal_strength": 80
+      },
+      "security_flags": {
+        "client_isolation": false,
+        "network_segmentation": false,
+        "monitoring_enabled": true
+      },
+      "known_issues": [
+        "Weak pre-shared key policy",
+        "Flat network (no segmentation between users)",
+        "Client isolation disabled"
+      ],
+      "vulnerabilities": [
+        "weak_encryption",
+        "lateral_movement",
+        "credential_theft"
+      ]
+    },
+    {
+      "id": "wifi_wpa3_5d9a42b3",
+      "type": "wifi",
+      "role": "secure_access",
+      "configuration": {
+        "ssid": "Secure_WiFi",
+        "encryption": "WPA3-SAE",
+        "password_policy": "strong",
+        "broadcasting": false,
+        "signal_strength": 85
+      },
+      "security_flags": {
+        "client_isolation": true,
+        "network_segmentation": true,
+        "monitoring_enabled": true
+      },
+      "known_issues": [],
+      "vulnerabilities": []
+    },
+    {
+      "id": "wifi_rogue_915b6535",
+      "type": "wifi",
+      "role": "unauthorized",
+      "configuration": {
+        "ssid": "EvilTwin",
+        "encryption": "open",
+        "password_policy": "none",
+        "broadcasting": true,
+        "signal_strength": 90,
+        "target_ssid": "Office_WiFi"
+      },
+      "security_flags": {
+        "client_isolation": false,
+        "network_segmentation": false,
+        "monitoring_enabled": false
+      },
+      "known_issues": [
+        "Unauthorized (rogue) access point detected",
+        "SSID mimics legitimate corporate network",
+        "No encryption or access controls",
+        "Not monitored by security systems"
+      ],
+      "vulnerabilities": [
+        "credential_harvesting",
+        "man_in_the_middle",
+        "malware_distribution"
+      ]
+    }
+  ],
+  "systems": [
+    {
+      "id": "system_f30b2ad0",
+      "hostname": "auth-server",
+      "os": {
+        "type": "Linux",
+        "version": "Ubuntu 20.04"
+      },
+      "network": {
+        "open_ports": [
+          22,
+          80
+        ],
+        "services": {
+          "22": {
+            "name": "SSH",
+            "version": "OpenSSH 7.6",
+            "status": "running"
+          },
+          "80": {
+            "name": "HTTP",
+            "version": "Apache 2.4",
+            "status": "running"
+          }
+        }
+      },
+      "security": {
+        "vulnerabilities": [
+          "brute_force_ssh"
+        ],
+        "misconfigurations": [
+          "default_credentials_enabled",
+          "weak_password_policy"
+        ],
+        "credentials": {
+          "root": "password123",
+          "admin": "admin123"
+        },
+        "permissions": {}
+      }
+    },
+    {
+      "id": "system_04d2253f",
+      "hostname": "web-prod",
+      "os": {
+        "type": "Linux",
+        "version": "Ubuntu 20.04"
+      },
+      "network": {
+        "open_ports": [
+          80,
+          443
+        ],
+        "services": {
+          "80": {
+            "name": "HTTP",
+            "version": "Apache 2.4",
+            "status": "running"
+          },
+          "443": {
+            "name": "HTTPS",
+            "version": "Apache 2.4",
+            "status": "running"
+          }
+        }
+      },
+      "security": {
+        "vulnerabilities": [
+          "ssl_exploitation",
+          "information_disclosure"
+        ],
+        "misconfigurations": [
+          "weak_ssl_configuration",
+          "directory_listing_enabled"
+        ],
+        "credentials": {
+          "webadmin": "admin123"
+        },
+        "permissions": {}
+      }
+    },
+    {
+      "id": "system_5fedd483",
+      "hostname": "api-prod",
+      "os": {
+        "type": "Linux",
+        "version": "Ubuntu 20.04"
+      },
+      "network": {
+        "open_ports": [
+          8080,
+          4433
+        ],
+        "services": {
+          "8080": {
+            "name": "HTTP-API",
+            "version": "Node.js Express",
+            "status": "running"
+          },
+          "4433": {
+            "name": "HTTPS-API",
+            "version": "Node.js Express",
+            "status": "running"
+          }
+        }
+      },
+      "security": {
+        "vulnerabilities": [
+          "unauthorized_access",
+          "api_abuse"
+        ],
+        "misconfigurations": [
+          "no_api_authentication",
+          "no_rate_limiting"
+        ],
+        "credentials": {
+          "api_user": "api123"
+        },
+        "permissions": {}
+      }
+    }
+  ],
+  "databases": [
+    {
+      "id": "db_67a34339",
+      "name": "users_db",
+      "type": "SQL",
+      "version": "PostgreSQL 12",
+      "connection": {
+        "host": "localhost",
+        "port": 5432
+      },
+      "authentication": {
+        "method": "password",
+        "enabled": true,
+        "encryption": "TLS"
+      },
+      "roles": {
+        "readonly": {
+          "permissions": [
+            "SELECT"
+          ],
+          "can_create": false,
+          "can_delete": false,
+          "can_modify": false
+        },
+        "readwrite": {
+          "permissions": [
+            "SELECT",
+            "INSERT",
+            "UPDATE"
+          ],
+          "can_create": false,
+          "can_delete": false,
+          "can_modify": false
+        },
+        "admin": {
+          "permissions": [
+            "SELECT",
+            "INSERT",
+            "UPDATE",
+            "DELETE",
+            "CREATE",
+            "DROP"
+          ],
+          "can_create": true,
+          "can_delete": true,
+          "can_modify": true
+        }
+      },
+      "tables": [
+        {
+          "name": "users",
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "username",
+              "type": "VARCHAR"
+            },
+            {
+              "name": "password_hash",
+              "type": "VARCHAR"
+            },
+            {
+              "name": "email",
+              "type": "VARCHAR"
+            }
+          ],
+          "row_count": 1000,
+          "sensitive_data": true,
+          "encrypted": false
+        },
+        {
+          "name": "orders",
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "user_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "amount",
+              "type": "DECIMAL"
+            },
+            {
+              "name": "status",
+              "type": "VARCHAR"
+            }
+          ],
+          "row_count": 1000,
+          "sensitive_data": false,
+          "encrypted": false
+        }
+      ],
+      "security": {
+        "vulnerabilities": [
+          "sql_injection",
+          "brute_force_login"
+        ],
+        "misconfigurations": [
+          "input_validation_disabled",
+          "weak_password_policy"
+        ]
+      },
+      "logs": []
+    },
+    {
+      "id": "db_615f8557",
+      "name": "logs_db",
+      "type": "NoSQL",
+      "version": "MongoDB 4.4",
+      "connection": {
+        "host": "localhost",
+        "port": 27017
+      },
+      "authentication": {
+        "method": "none",
+        "enabled": false,
+        "encryption": "none"
+      },
+      "roles": {
+        "read": {
+          "permissions": [
+            "find",
+            "insert",
+            "update",
+            "remove"
+          ],
+          "can_create": false,
+          "can_delete": false,
+          "can_modify": false
+        },
+        "readWrite": {
+          "permissions": [
+            "find",
+            "insert",
+            "update",
+            "remove"
+          ],
+          "can_create": false,
+          "can_delete": false,
+          "can_modify": false
+        },
+        "dbAdmin": {
+          "permissions": [
+            "find",
+            "insert",
+            "update",
+            "remove",
+            "createIndex",
+            "drop"
+          ],
+          "can_create": true,
+          "can_delete": true,
+          "can_modify": true
+        }
+      },
+      "tables": [
+        {
+          "name": "users",
+          "columns": [
+            {
+              "name": "_id",
+              "type": "ObjectId"
+            },
+            {
+              "name": "username",
+              "type": "String"
+            },
+            {
+              "name": "email",
+              "type": "String"
+            },
+            {
+              "name": "profile",
+              "type": "Object"
+            }
+          ],
+          "row_count": 1000,
+          "sensitive_data": true,
+          "encrypted": false
+        },
+        {
+          "name": "logs",
+          "columns": [
+            {
+              "name": "_id",
+              "type": "ObjectId"
+            },
+            {
+              "name": "timestamp",
+              "type": "Date"
+            },
+            {
+              "name": "level",
+              "type": "String"
+            },
+            {
+              "name": "message",
+              "type": "String"
+            }
+          ],
+          "row_count": 1000,
+          "sensitive_data": false,
+          "encrypted": false
+        }
+      ],
+      "security": {
+        "vulnerabilities": [
+          "unauthorized_access",
+          "privilege_escalation"
+        ],
+        "misconfigurations": [
+          "authentication_disabled",
+          "excessive_privileges"
+        ]
+      },
+      "logs": []
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-02-17T18:53:15.298246",
+    "updated_at": "2026-02-17T18:53:15.298246",
+    "version": "1.0.0",
+    "network_count": 4,
+    "system_count": 3,
+    "database_count": 2
+  }
+}

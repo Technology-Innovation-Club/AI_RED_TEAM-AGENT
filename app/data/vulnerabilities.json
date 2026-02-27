@@ -1,0 +1,2957 @@
+{
+  "vulnerabilities": [
+    {
+      "id": "vuln_e708b1d5",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on auth-server",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_ae1e467f",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on web-prod",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_1a171c63",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on api-prod",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_bff33242",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on auth-server",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_6a269b62",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on web-prod",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_664ceb18",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on api-prod",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_2e4d1151",
+      "name": "Weak Authentication",
+      "severity": "high",
+      "description": "Vulnerability discovered via brute_force attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "brute_force",
+      "cwe_id": "CWE-521",
+      "owasp_category": "A02:2021 - Cryptographic Failures",
+      "evidence": [
+        "Port 22 found open on auth-server",
+        "Service vulnerable to brute_force detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent brute_force attacks"
+    },
+    {
+      "id": "vuln_0e275e62",
+      "name": "SQL Injection",
+      "severity": "critical",
+      "description": "Vulnerability discovered via sql_injection attack on users_db",
+      "target": "users_db",
+      "attack_vector": "sql_injection",
+      "cwe_id": "CWE-89",
+      "owasp_category": "A03:2021 - Injection",
+      "evidence": [
+        "Port 3306 found open on users_db",
+        "Service vulnerable to sql_injection detected",
+        "Successfully bypassed authentication on users_db",
+        "Gained unauthorized access to users_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent sql_injection attacks"
+    },
+    {
+      "id": "vuln_6933412b",
+      "name": "Authentication Bypass",
+      "severity": "critical",
+      "description": "Vulnerability discovered via authentication_bypass attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "authentication_bypass",
+      "cwe_id": "CWE-287",
+      "owasp_category": "A07:2021 - Identification and Authentication Failures",
+      "evidence": [
+        "Port 80 found open on auth-server",
+        "Service vulnerable to authentication_bypass detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent authentication_bypass attacks"
+    },
+    {
+      "id": "vuln_540eed9f",
+      "name": "Authentication Bypass",
+      "severity": "critical",
+      "description": "Vulnerability discovered via authentication_bypass attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "authentication_bypass",
+      "cwe_id": "CWE-287",
+      "owasp_category": "A07:2021 - Identification and Authentication Failures",
+      "evidence": [
+        "Port 80 found open on web-prod",
+        "Service vulnerable to authentication_bypass detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent authentication_bypass attacks"
+    },
+    {
+      "id": "vuln_a077707d",
+      "name": "Security Vulnerability from lateral_movement",
+      "severity": "medium",
+      "description": "Vulnerability discovered via lateral_movement attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "lateral_movement",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 445 found open on web-prod",
+        "Service vulnerable to lateral_movement detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent lateral_movement attacks"
+    },
+    {
+      "id": "vuln_ba5f8029",
+      "name": "Security Vulnerability from lateral_movement",
+      "severity": "medium",
+      "description": "Vulnerability discovered via lateral_movement attack on users_db",
+      "target": "users_db",
+      "attack_vector": "lateral_movement",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 445 found open on users_db",
+        "Service vulnerable to lateral_movement detected",
+        "Successfully bypassed authentication on users_db",
+        "Gained unauthorized access to users_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent lateral_movement attacks"
+    },
+    {
+      "id": "vuln_653c69eb",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on auth-server",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_999ad4cd",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on api-prod",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_ec28bcae",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on users_db",
+      "target": "users_db",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on users_db",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on users_db",
+        "Gained unauthorized access to users_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_1ff07743",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on auth-server",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_36c0a1d0",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on web-prod",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_69fb1d38",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on api-prod",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_203112de",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on auth-server",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_9c9ec6fa",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on web-prod",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_1c5422d7",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on api-prod",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_f0489d9c",
+      "name": "Weak Authentication",
+      "severity": "high",
+      "description": "Vulnerability discovered via brute_force attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "brute_force",
+      "cwe_id": "CWE-521",
+      "owasp_category": "A02:2021 - Cryptographic Failures",
+      "evidence": [
+        "Port 22 found open on web-prod",
+        "Service vulnerable to brute_force detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent brute_force attacks"
+    },
+    {
+      "id": "vuln_186bcadb",
+      "name": "SQL Injection",
+      "severity": "critical",
+      "description": "Vulnerability discovered via sql_injection attack on users_db",
+      "target": "users_db",
+      "attack_vector": "sql_injection",
+      "cwe_id": "CWE-89",
+      "owasp_category": "A03:2021 - Injection",
+      "evidence": [
+        "Port 3306 found open on users_db",
+        "Service vulnerable to sql_injection detected",
+        "Successfully bypassed authentication on users_db",
+        "Gained unauthorized access to users_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent sql_injection attacks"
+    },
+    {
+      "id": "vuln_5291bdf4",
+      "name": "Authentication Bypass",
+      "severity": "critical",
+      "description": "Vulnerability discovered via authentication_bypass attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "authentication_bypass",
+      "cwe_id": "CWE-287",
+      "owasp_category": "A07:2021 - Identification and Authentication Failures",
+      "evidence": [
+        "Port 80 found open on auth-server",
+        "Service vulnerable to authentication_bypass detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent authentication_bypass attacks"
+    },
+    {
+      "id": "vuln_b95cb912",
+      "name": "Privilege Escalation",
+      "severity": "high",
+      "description": "Vulnerability discovered via privilege_escalation attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "privilege_escalation",
+      "cwe_id": "CWE-269",
+      "owasp_category": "A01:2021 - Broken Access Control",
+      "evidence": [
+        "Port 22 found open on auth-server",
+        "Service vulnerable to privilege_escalation detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent privilege_escalation attacks"
+    },
+    {
+      "id": "vuln_f47f1c1d",
+      "name": "Security Vulnerability from lateral_movement",
+      "severity": "medium",
+      "description": "Vulnerability discovered via lateral_movement attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "lateral_movement",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 445 found open on web-prod",
+        "Service vulnerable to lateral_movement detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent lateral_movement attacks"
+    },
+    {
+      "id": "vuln_4efd640e",
+      "name": "Security Vulnerability from lateral_movement",
+      "severity": "medium",
+      "description": "Vulnerability discovered via lateral_movement attack on logs_db",
+      "target": "logs_db",
+      "attack_vector": "lateral_movement",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 445 found open on logs_db",
+        "Service vulnerable to lateral_movement detected",
+        "Successfully bypassed authentication on logs_db",
+        "Gained unauthorized access to logs_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent lateral_movement attacks"
+    },
+    {
+      "id": "vuln_9b7c58d3",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on api-prod",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_c2e1f057",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on users_db",
+      "target": "users_db",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on users_db",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on users_db",
+        "Gained unauthorized access to users_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_95435bf3",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on logs_db",
+      "target": "logs_db",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on logs_db",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on logs_db",
+        "Gained unauthorized access to logs_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_635d3e5e",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on auth-server",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_bad2e259",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on web-prod",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_574e62ab",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on api-prod",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_b36733fa",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on auth-server",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_03fb836a",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on web-prod",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_60106201",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on api-prod",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_1968fc7c",
+      "name": "Weak Authentication",
+      "severity": "high",
+      "description": "Vulnerability discovered via brute_force attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "brute_force",
+      "cwe_id": "CWE-521",
+      "owasp_category": "A02:2021 - Cryptographic Failures",
+      "evidence": [
+        "Port 22 found open on auth-server",
+        "Service vulnerable to brute_force detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent brute_force attacks"
+    },
+    {
+      "id": "vuln_13d4d071",
+      "name": "SQL Injection",
+      "severity": "critical",
+      "description": "Vulnerability discovered via sql_injection attack on users_db",
+      "target": "users_db",
+      "attack_vector": "sql_injection",
+      "cwe_id": "CWE-89",
+      "owasp_category": "A03:2021 - Injection",
+      "evidence": [
+        "Port 3306 found open on users_db",
+        "Service vulnerable to sql_injection detected",
+        "Successfully bypassed authentication on users_db",
+        "Gained unauthorized access to users_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent sql_injection attacks"
+    },
+    {
+      "id": "vuln_7fd20b77",
+      "name": "Privilege Escalation",
+      "severity": "high",
+      "description": "Vulnerability discovered via privilege_escalation attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "privilege_escalation",
+      "cwe_id": "CWE-269",
+      "owasp_category": "A01:2021 - Broken Access Control",
+      "evidence": [
+        "Port 22 found open on web-prod",
+        "Service vulnerable to privilege_escalation detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent privilege_escalation attacks"
+    },
+    {
+      "id": "vuln_5dd599d2",
+      "name": "Security Vulnerability from lateral_movement",
+      "severity": "medium",
+      "description": "Vulnerability discovered via lateral_movement attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "lateral_movement",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 445 found open on auth-server",
+        "Service vulnerable to lateral_movement detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent lateral_movement attacks"
+    },
+    {
+      "id": "vuln_f2b5471e",
+      "name": "Security Vulnerability from lateral_movement",
+      "severity": "medium",
+      "description": "Vulnerability discovered via lateral_movement attack on logs_db",
+      "target": "logs_db",
+      "attack_vector": "lateral_movement",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 445 found open on logs_db",
+        "Service vulnerable to lateral_movement detected",
+        "Successfully bypassed authentication on logs_db",
+        "Gained unauthorized access to logs_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent lateral_movement attacks"
+    },
+    {
+      "id": "vuln_c1fa9061",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on web-prod",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_3f5f3387",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on api-prod",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_de162cf3",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on users_db",
+      "target": "users_db",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on users_db",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on users_db",
+        "Gained unauthorized access to users_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_be7600cd",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on logs_db",
+      "target": "logs_db",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on logs_db",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on logs_db",
+        "Gained unauthorized access to logs_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_7c289324",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on auth-server",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_686a0c44",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on web-prod",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_3a532bc9",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on api-prod",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_abdc90c2",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on auth-server",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_77ac152a",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on web-prod",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_760ec92b",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on api-prod",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_3f107cfa",
+      "name": "SQL Injection",
+      "severity": "critical",
+      "description": "Vulnerability discovered via sql_injection attack on users_db",
+      "target": "users_db",
+      "attack_vector": "sql_injection",
+      "cwe_id": "CWE-89",
+      "owasp_category": "A03:2021 - Injection",
+      "evidence": [
+        "Port 3306 found open on users_db",
+        "Service vulnerable to sql_injection detected",
+        "Successfully bypassed authentication on users_db",
+        "Gained unauthorized access to users_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent sql_injection attacks"
+    },
+    {
+      "id": "vuln_5b33533d",
+      "name": "SQL Injection",
+      "severity": "critical",
+      "description": "Vulnerability discovered via sql_injection attack on logs_db",
+      "target": "logs_db",
+      "attack_vector": "sql_injection",
+      "cwe_id": "CWE-89",
+      "owasp_category": "A03:2021 - Injection",
+      "evidence": [
+        "Port 3306 found open on logs_db",
+        "Service vulnerable to sql_injection detected",
+        "Successfully bypassed authentication on logs_db",
+        "Gained unauthorized access to logs_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent sql_injection attacks"
+    },
+    {
+      "id": "vuln_a3e08343",
+      "name": "Privilege Escalation",
+      "severity": "high",
+      "description": "Vulnerability discovered via privilege_escalation attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "privilege_escalation",
+      "cwe_id": "CWE-269",
+      "owasp_category": "A01:2021 - Broken Access Control",
+      "evidence": [
+        "Port 22 found open on auth-server",
+        "Service vulnerable to privilege_escalation detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent privilege_escalation attacks"
+    },
+    {
+      "id": "vuln_8c252cf6",
+      "name": "Security Vulnerability from lateral_movement",
+      "severity": "medium",
+      "description": "Vulnerability discovered via lateral_movement attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "lateral_movement",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 445 found open on web-prod",
+        "Service vulnerable to lateral_movement detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent lateral_movement attacks"
+    },
+    {
+      "id": "vuln_f5e0df37",
+      "name": "Security Vulnerability from lateral_movement",
+      "severity": "medium",
+      "description": "Vulnerability discovered via lateral_movement attack on users_db",
+      "target": "users_db",
+      "attack_vector": "lateral_movement",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 445 found open on users_db",
+        "Service vulnerable to lateral_movement detected",
+        "Successfully bypassed authentication on users_db",
+        "Gained unauthorized access to users_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent lateral_movement attacks"
+    },
+    {
+      "id": "vuln_27218448",
+      "name": "Security Vulnerability from lateral_movement",
+      "severity": "medium",
+      "description": "Vulnerability discovered via lateral_movement attack on logs_db",
+      "target": "logs_db",
+      "attack_vector": "lateral_movement",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 445 found open on logs_db",
+        "Service vulnerable to lateral_movement detected",
+        "Successfully bypassed authentication on logs_db",
+        "Gained unauthorized access to logs_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent lateral_movement attacks"
+    },
+    {
+      "id": "vuln_f6346577",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on auth-server",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_a7ae1f63",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on api-prod",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_4619c155",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on logs_db",
+      "target": "logs_db",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on logs_db",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on logs_db",
+        "Gained unauthorized access to logs_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_ee3c1052",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on auth-server",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_4817742d",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on web-prod",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_5714c5dd",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on api-prod",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_4abbbc2c",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on web-prod",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_2dc06192",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on api-prod",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_220b31a3",
+      "name": "Weak Authentication",
+      "severity": "high",
+      "description": "Vulnerability discovered via brute_force attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "brute_force",
+      "cwe_id": "CWE-521",
+      "owasp_category": "A02:2021 - Cryptographic Failures",
+      "evidence": [
+        "Port 22 found open on web-prod",
+        "Service vulnerable to brute_force detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent brute_force attacks"
+    },
+    {
+      "id": "vuln_4e788175",
+      "name": "SQL Injection",
+      "severity": "critical",
+      "description": "Vulnerability discovered via sql_injection attack on users_db",
+      "target": "users_db",
+      "attack_vector": "sql_injection",
+      "cwe_id": "CWE-89",
+      "owasp_category": "A03:2021 - Injection",
+      "evidence": [
+        "Port 3306 found open on users_db",
+        "Service vulnerable to sql_injection detected",
+        "Successfully bypassed authentication on users_db",
+        "Gained unauthorized access to users_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent sql_injection attacks"
+    },
+    {
+      "id": "vuln_c5e23a29",
+      "name": "Privilege Escalation",
+      "severity": "high",
+      "description": "Vulnerability discovered via privilege_escalation attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "privilege_escalation",
+      "cwe_id": "CWE-269",
+      "owasp_category": "A01:2021 - Broken Access Control",
+      "evidence": [
+        "Port 22 found open on auth-server",
+        "Service vulnerable to privilege_escalation detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent privilege_escalation attacks"
+    },
+    {
+      "id": "vuln_4d04440f",
+      "name": "Privilege Escalation",
+      "severity": "high",
+      "description": "Vulnerability discovered via privilege_escalation attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "privilege_escalation",
+      "cwe_id": "CWE-269",
+      "owasp_category": "A01:2021 - Broken Access Control",
+      "evidence": [
+        "Port 22 found open on web-prod",
+        "Service vulnerable to privilege_escalation detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent privilege_escalation attacks"
+    },
+    {
+      "id": "vuln_5f2abca9",
+      "name": "Security Vulnerability from lateral_movement",
+      "severity": "medium",
+      "description": "Vulnerability discovered via lateral_movement attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "lateral_movement",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 445 found open on auth-server",
+        "Service vulnerable to lateral_movement detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent lateral_movement attacks"
+    },
+    {
+      "id": "vuln_68ddf66a",
+      "name": "Security Vulnerability from lateral_movement",
+      "severity": "medium",
+      "description": "Vulnerability discovered via lateral_movement attack on users_db",
+      "target": "users_db",
+      "attack_vector": "lateral_movement",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 445 found open on users_db",
+        "Service vulnerable to lateral_movement detected",
+        "Successfully bypassed authentication on users_db",
+        "Gained unauthorized access to users_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent lateral_movement attacks"
+    },
+    {
+      "id": "vuln_3fdc4607",
+      "name": "Security Vulnerability from lateral_movement",
+      "severity": "medium",
+      "description": "Vulnerability discovered via lateral_movement attack on logs_db",
+      "target": "logs_db",
+      "attack_vector": "lateral_movement",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 445 found open on logs_db",
+        "Service vulnerable to lateral_movement detected",
+        "Successfully bypassed authentication on logs_db",
+        "Gained unauthorized access to logs_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent lateral_movement attacks"
+    },
+    {
+      "id": "vuln_a1f1d1b1",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on web-prod",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_37ec4cc9",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on api-prod",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_dd34c6f6",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on users_db",
+      "target": "users_db",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on users_db",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on users_db",
+        "Gained unauthorized access to users_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_e79eb530",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on logs_db",
+      "target": "logs_db",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on logs_db",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on logs_db",
+        "Gained unauthorized access to logs_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_8b446c8c",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on auth-server",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_eadb85d7",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on web-prod",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_b8e06077",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on api-prod",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_f0801c7e",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on auth-server",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_e241a447",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on web-prod",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_15fa2364",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on api-prod",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_b340197f",
+      "name": "Weak Authentication",
+      "severity": "high",
+      "description": "Vulnerability discovered via brute_force attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "brute_force",
+      "cwe_id": "CWE-521",
+      "owasp_category": "A02:2021 - Cryptographic Failures",
+      "evidence": [
+        "Port 22 found open on auth-server",
+        "Service vulnerable to brute_force detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent brute_force attacks"
+    },
+    {
+      "id": "vuln_933a9943",
+      "name": "SQL Injection",
+      "severity": "critical",
+      "description": "Vulnerability discovered via sql_injection attack on users_db",
+      "target": "users_db",
+      "attack_vector": "sql_injection",
+      "cwe_id": "CWE-89",
+      "owasp_category": "A03:2021 - Injection",
+      "evidence": [
+        "Port 3306 found open on users_db",
+        "Service vulnerable to sql_injection detected",
+        "Successfully bypassed authentication on users_db",
+        "Gained unauthorized access to users_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent sql_injection attacks"
+    },
+    {
+      "id": "vuln_6a21cbf8",
+      "name": "SQL Injection",
+      "severity": "critical",
+      "description": "Vulnerability discovered via sql_injection attack on logs_db",
+      "target": "logs_db",
+      "attack_vector": "sql_injection",
+      "cwe_id": "CWE-89",
+      "owasp_category": "A03:2021 - Injection",
+      "evidence": [
+        "Port 3306 found open on logs_db",
+        "Service vulnerable to sql_injection detected",
+        "Successfully bypassed authentication on logs_db",
+        "Gained unauthorized access to logs_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent sql_injection attacks"
+    },
+    {
+      "id": "vuln_fcb60fcd",
+      "name": "Privilege Escalation",
+      "severity": "high",
+      "description": "Vulnerability discovered via privilege_escalation attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "privilege_escalation",
+      "cwe_id": "CWE-269",
+      "owasp_category": "A01:2021 - Broken Access Control",
+      "evidence": [
+        "Port 22 found open on auth-server",
+        "Service vulnerable to privilege_escalation detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent privilege_escalation attacks"
+    },
+    {
+      "id": "vuln_d280c580",
+      "name": "Privilege Escalation",
+      "severity": "high",
+      "description": "Vulnerability discovered via privilege_escalation attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "privilege_escalation",
+      "cwe_id": "CWE-269",
+      "owasp_category": "A01:2021 - Broken Access Control",
+      "evidence": [
+        "Port 22 found open on web-prod",
+        "Service vulnerable to privilege_escalation detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent privilege_escalation attacks"
+    },
+    {
+      "id": "vuln_2edefb82",
+      "name": "Security Vulnerability from lateral_movement",
+      "severity": "medium",
+      "description": "Vulnerability discovered via lateral_movement attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "lateral_movement",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 445 found open on web-prod",
+        "Service vulnerable to lateral_movement detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent lateral_movement attacks"
+    },
+    {
+      "id": "vuln_289d3fcb",
+      "name": "Security Vulnerability from lateral_movement",
+      "severity": "medium",
+      "description": "Vulnerability discovered via lateral_movement attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "lateral_movement",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 445 found open on api-prod",
+        "Service vulnerable to lateral_movement detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent lateral_movement attacks"
+    },
+    {
+      "id": "vuln_1547b683",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on api-prod",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_8093ad4b",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on users_db",
+      "target": "users_db",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on users_db",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on users_db",
+        "Gained unauthorized access to users_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_1c1ba4da",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on logs_db",
+      "target": "logs_db",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on logs_db",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on logs_db",
+        "Gained unauthorized access to logs_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_f62b4858",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on auth-server",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_58703c3e",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on web-prod",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_ab557817",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on api-prod",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_ccd2cc6d",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on web-prod",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_fc58c774",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on api-prod",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_ed88aca9",
+      "name": "SQL Injection",
+      "severity": "critical",
+      "description": "Vulnerability discovered via sql_injection attack on logs_db",
+      "target": "logs_db",
+      "attack_vector": "sql_injection",
+      "cwe_id": "CWE-89",
+      "owasp_category": "A03:2021 - Injection",
+      "evidence": [
+        "Port 3306 found open on logs_db",
+        "Service vulnerable to sql_injection detected",
+        "Successfully bypassed authentication on logs_db",
+        "Gained unauthorized access to logs_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent sql_injection attacks"
+    },
+    {
+      "id": "vuln_aac04cea",
+      "name": "Security Vulnerability from lateral_movement",
+      "severity": "medium",
+      "description": "Vulnerability discovered via lateral_movement attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "lateral_movement",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 445 found open on api-prod",
+        "Service vulnerable to lateral_movement detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent lateral_movement attacks"
+    },
+    {
+      "id": "vuln_b18bad9b",
+      "name": "Security Vulnerability from lateral_movement",
+      "severity": "medium",
+      "description": "Vulnerability discovered via lateral_movement attack on logs_db",
+      "target": "logs_db",
+      "attack_vector": "lateral_movement",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 445 found open on logs_db",
+        "Service vulnerable to lateral_movement detected",
+        "Successfully bypassed authentication on logs_db",
+        "Gained unauthorized access to logs_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent lateral_movement attacks"
+    },
+    {
+      "id": "vuln_900680cd",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on auth-server",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_0ca6317e",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on web-prod",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_0c6e7ba1",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on users_db",
+      "target": "users_db",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on users_db",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on users_db",
+        "Gained unauthorized access to users_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_afc59db4",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on logs_db",
+      "target": "logs_db",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on logs_db",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on logs_db",
+        "Gained unauthorized access to logs_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_b837bbe7",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on auth-server",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_5b101f2b",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on web-prod",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_0623dd26",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on api-prod",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_e186687a",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on auth-server",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_1d19da8e",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on web-prod",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_6abdd7f4",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on api-prod",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_dd7353e0",
+      "name": "SQL Injection",
+      "severity": "critical",
+      "description": "Vulnerability discovered via sql_injection attack on users_db",
+      "target": "users_db",
+      "attack_vector": "sql_injection",
+      "cwe_id": "CWE-89",
+      "owasp_category": "A03:2021 - Injection",
+      "evidence": [
+        "Port 3306 found open on users_db",
+        "Service vulnerable to sql_injection detected",
+        "Successfully bypassed authentication on users_db",
+        "Gained unauthorized access to users_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent sql_injection attacks"
+    },
+    {
+      "id": "vuln_fffb121e",
+      "name": "Authentication Bypass",
+      "severity": "critical",
+      "description": "Vulnerability discovered via authentication_bypass attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "authentication_bypass",
+      "cwe_id": "CWE-287",
+      "owasp_category": "A07:2021 - Identification and Authentication Failures",
+      "evidence": [
+        "Port 80 found open on auth-server",
+        "Service vulnerable to authentication_bypass detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent authentication_bypass attacks"
+    },
+    {
+      "id": "vuln_efdacb5d",
+      "name": "Security Vulnerability from lateral_movement",
+      "severity": "medium",
+      "description": "Vulnerability discovered via lateral_movement attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "lateral_movement",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 445 found open on api-prod",
+        "Service vulnerable to lateral_movement detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent lateral_movement attacks"
+    },
+    {
+      "id": "vuln_c2505c55",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on auth-server",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_90ab0f14",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on api-prod",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_bd25228c",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on users_db",
+      "target": "users_db",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on users_db",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on users_db",
+        "Gained unauthorized access to users_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_51dc975a",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on auth-server",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_c90e02c5",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on web-prod",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_71f1c4ad",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on api-prod",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_9601572a",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on auth-server",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_1d834572",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on web-prod",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_865be06f",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on api-prod",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_09e4fb48",
+      "name": "SQL Injection",
+      "severity": "critical",
+      "description": "Vulnerability discovered via sql_injection attack on users_db",
+      "target": "users_db",
+      "attack_vector": "sql_injection",
+      "cwe_id": "CWE-89",
+      "owasp_category": "A03:2021 - Injection",
+      "evidence": [
+        "Port 3306 found open on users_db",
+        "Service vulnerable to sql_injection detected",
+        "Successfully bypassed authentication on users_db",
+        "Gained unauthorized access to users_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent sql_injection attacks"
+    },
+    {
+      "id": "vuln_1b35b0c5",
+      "name": "SQL Injection",
+      "severity": "critical",
+      "description": "Vulnerability discovered via sql_injection attack on logs_db",
+      "target": "logs_db",
+      "attack_vector": "sql_injection",
+      "cwe_id": "CWE-89",
+      "owasp_category": "A03:2021 - Injection",
+      "evidence": [
+        "Port 3306 found open on logs_db",
+        "Service vulnerable to sql_injection detected",
+        "Successfully bypassed authentication on logs_db",
+        "Gained unauthorized access to logs_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent sql_injection attacks"
+    },
+    {
+      "id": "vuln_e356ad8b",
+      "name": "Authentication Bypass",
+      "severity": "critical",
+      "description": "Vulnerability discovered via authentication_bypass attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "authentication_bypass",
+      "cwe_id": "CWE-287",
+      "owasp_category": "A07:2021 - Identification and Authentication Failures",
+      "evidence": [
+        "Port 80 found open on web-prod",
+        "Service vulnerable to authentication_bypass detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent authentication_bypass attacks"
+    },
+    {
+      "id": "vuln_d2574c9d",
+      "name": "Privilege Escalation",
+      "severity": "high",
+      "description": "Vulnerability discovered via privilege_escalation attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "privilege_escalation",
+      "cwe_id": "CWE-269",
+      "owasp_category": "A01:2021 - Broken Access Control",
+      "evidence": [
+        "Port 22 found open on auth-server",
+        "Service vulnerable to privilege_escalation detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent privilege_escalation attacks"
+    },
+    {
+      "id": "vuln_5a02379a",
+      "name": "Security Vulnerability from lateral_movement",
+      "severity": "medium",
+      "description": "Vulnerability discovered via lateral_movement attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "lateral_movement",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 445 found open on auth-server",
+        "Service vulnerable to lateral_movement detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent lateral_movement attacks"
+    },
+    {
+      "id": "vuln_13b425ce",
+      "name": "Security Vulnerability from lateral_movement",
+      "severity": "medium",
+      "description": "Vulnerability discovered via lateral_movement attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "lateral_movement",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 445 found open on web-prod",
+        "Service vulnerable to lateral_movement detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent lateral_movement attacks"
+    },
+    {
+      "id": "vuln_0a1966b3",
+      "name": "Security Vulnerability from lateral_movement",
+      "severity": "medium",
+      "description": "Vulnerability discovered via lateral_movement attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "lateral_movement",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 445 found open on api-prod",
+        "Service vulnerable to lateral_movement detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent lateral_movement attacks"
+    },
+    {
+      "id": "vuln_3ac23df5",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on web-prod",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_59727f41",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on logs_db",
+      "target": "logs_db",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on logs_db",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on logs_db",
+        "Gained unauthorized access to logs_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_9a6d1939",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on auth-server",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_84154373",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on web-prod",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_51ddeda4",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on api-prod",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_3cdf0f86",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on auth-server",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_cc437706",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on web-prod",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_62e49e6d",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on api-prod",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_9a6116e1",
+      "name": "Weak Authentication",
+      "severity": "high",
+      "description": "Vulnerability discovered via brute_force attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "brute_force",
+      "cwe_id": "CWE-521",
+      "owasp_category": "A02:2021 - Cryptographic Failures",
+      "evidence": [
+        "Port 22 found open on auth-server",
+        "Service vulnerable to brute_force detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent brute_force attacks"
+    },
+    {
+      "id": "vuln_e92a6b5b",
+      "name": "SQL Injection",
+      "severity": "critical",
+      "description": "Vulnerability discovered via sql_injection attack on logs_db",
+      "target": "logs_db",
+      "attack_vector": "sql_injection",
+      "cwe_id": "CWE-89",
+      "owasp_category": "A03:2021 - Injection",
+      "evidence": [
+        "Port 3306 found open on logs_db",
+        "Service vulnerable to sql_injection detected",
+        "Successfully bypassed authentication on logs_db",
+        "Gained unauthorized access to logs_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent sql_injection attacks"
+    },
+    {
+      "id": "vuln_c1b8b98b",
+      "name": "Security Vulnerability from lateral_movement",
+      "severity": "medium",
+      "description": "Vulnerability discovered via lateral_movement attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "lateral_movement",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 445 found open on api-prod",
+        "Service vulnerable to lateral_movement detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent lateral_movement attacks"
+    },
+    {
+      "id": "vuln_28adfc81",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on users_db",
+      "target": "users_db",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on users_db",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on users_db",
+        "Gained unauthorized access to users_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_ba49486d",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on logs_db",
+      "target": "logs_db",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on logs_db",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on logs_db",
+        "Gained unauthorized access to logs_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_a8bbfe07",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on auth-server",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_ba7809f6",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on web-prod",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_78ea33c5",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on api-prod",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_88d51c27",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on auth-server",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_8633f1a9",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on web-prod",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_bf1eabfe",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on api-prod",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_b708fd3f",
+      "name": "Weak Authentication",
+      "severity": "high",
+      "description": "Vulnerability discovered via brute_force attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "brute_force",
+      "cwe_id": "CWE-521",
+      "owasp_category": "A02:2021 - Cryptographic Failures",
+      "evidence": [
+        "Port 22 found open on auth-server",
+        "Service vulnerable to brute_force detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent brute_force attacks"
+    },
+    {
+      "id": "vuln_222ba18f",
+      "name": "SQL Injection",
+      "severity": "critical",
+      "description": "Vulnerability discovered via sql_injection attack on logs_db",
+      "target": "logs_db",
+      "attack_vector": "sql_injection",
+      "cwe_id": "CWE-89",
+      "owasp_category": "A03:2021 - Injection",
+      "evidence": [
+        "Port 3306 found open on logs_db",
+        "Service vulnerable to sql_injection detected",
+        "Successfully bypassed authentication on logs_db",
+        "Gained unauthorized access to logs_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent sql_injection attacks"
+    },
+    {
+      "id": "vuln_eb3e8051",
+      "name": "Authentication Bypass",
+      "severity": "critical",
+      "description": "Vulnerability discovered via authentication_bypass attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "authentication_bypass",
+      "cwe_id": "CWE-287",
+      "owasp_category": "A07:2021 - Identification and Authentication Failures",
+      "evidence": [
+        "Port 80 found open on auth-server",
+        "Service vulnerable to authentication_bypass detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent authentication_bypass attacks"
+    },
+    {
+      "id": "vuln_db8e2801",
+      "name": "Authentication Bypass",
+      "severity": "critical",
+      "description": "Vulnerability discovered via authentication_bypass attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "authentication_bypass",
+      "cwe_id": "CWE-287",
+      "owasp_category": "A07:2021 - Identification and Authentication Failures",
+      "evidence": [
+        "Port 80 found open on web-prod",
+        "Service vulnerable to authentication_bypass detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent authentication_bypass attacks"
+    },
+    {
+      "id": "vuln_5df5a09c",
+      "name": "Privilege Escalation",
+      "severity": "high",
+      "description": "Vulnerability discovered via privilege_escalation attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "privilege_escalation",
+      "cwe_id": "CWE-269",
+      "owasp_category": "A01:2021 - Broken Access Control",
+      "evidence": [
+        "Port 22 found open on web-prod",
+        "Service vulnerable to privilege_escalation detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent privilege_escalation attacks"
+    },
+    {
+      "id": "vuln_bf9d0455",
+      "name": "Security Vulnerability from lateral_movement",
+      "severity": "medium",
+      "description": "Vulnerability discovered via lateral_movement attack on logs_db",
+      "target": "logs_db",
+      "attack_vector": "lateral_movement",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 445 found open on logs_db",
+        "Service vulnerable to lateral_movement detected",
+        "Successfully bypassed authentication on logs_db",
+        "Gained unauthorized access to logs_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent lateral_movement attacks"
+    },
+    {
+      "id": "vuln_3336f331",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on auth-server",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_33e12ccd",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on web-prod",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_9d7ac774",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on api-prod",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_073872ae",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on logs_db",
+      "target": "logs_db",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on logs_db",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on logs_db",
+        "Gained unauthorized access to logs_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_9219ab90",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on auth-server",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_ed8c0e3f",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on web-prod",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_cb485041",
+      "name": "Security Vulnerability from port_scan",
+      "severity": "medium",
+      "description": "Vulnerability discovered via port_scan attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "port_scan",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 80 found open on api-prod",
+        "Service vulnerable to port_scan detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent port_scan attacks"
+    },
+    {
+      "id": "vuln_b5529bd1",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on auth-server",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_021a4488",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on web-prod",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_52fb04de",
+      "name": "Security Vulnerability from service_discovery",
+      "severity": "medium",
+      "description": "Vulnerability discovered via service_discovery attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "service_discovery",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 22 found open on api-prod",
+        "Service vulnerable to service_discovery detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent service_discovery attacks"
+    },
+    {
+      "id": "vuln_e4e952cd",
+      "name": "Privilege Escalation",
+      "severity": "high",
+      "description": "Vulnerability discovered via privilege_escalation attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "privilege_escalation",
+      "cwe_id": "CWE-269",
+      "owasp_category": "A01:2021 - Broken Access Control",
+      "evidence": [
+        "Port 22 found open on auth-server",
+        "Service vulnerable to privilege_escalation detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent privilege_escalation attacks"
+    },
+    {
+      "id": "vuln_8744d256",
+      "name": "Privilege Escalation",
+      "severity": "high",
+      "description": "Vulnerability discovered via privilege_escalation attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "privilege_escalation",
+      "cwe_id": "CWE-269",
+      "owasp_category": "A01:2021 - Broken Access Control",
+      "evidence": [
+        "Port 22 found open on web-prod",
+        "Service vulnerable to privilege_escalation detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent privilege_escalation attacks"
+    },
+    {
+      "id": "vuln_53ebd1a4",
+      "name": "Security Vulnerability from lateral_movement",
+      "severity": "medium",
+      "description": "Vulnerability discovered via lateral_movement attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "lateral_movement",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 445 found open on auth-server",
+        "Service vulnerable to lateral_movement detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent lateral_movement attacks"
+    },
+    {
+      "id": "vuln_9ab28ad9",
+      "name": "Security Vulnerability from lateral_movement",
+      "severity": "medium",
+      "description": "Vulnerability discovered via lateral_movement attack on logs_db",
+      "target": "logs_db",
+      "attack_vector": "lateral_movement",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 445 found open on logs_db",
+        "Service vulnerable to lateral_movement detected",
+        "Successfully bypassed authentication on logs_db",
+        "Gained unauthorized access to logs_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent lateral_movement attacks"
+    },
+    {
+      "id": "vuln_a389aa26",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on auth-server",
+      "target": "auth-server",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on auth-server",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on auth-server",
+        "Gained unauthorized access to auth-server"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_8b285fef",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on web-prod",
+      "target": "web-prod",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on web-prod",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on web-prod",
+        "Gained unauthorized access to web-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_6dbb9319",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on api-prod",
+      "target": "api-prod",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on api-prod",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on api-prod",
+        "Gained unauthorized access to api-prod"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_f7b2b880",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on users_db",
+      "target": "users_db",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on users_db",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on users_db",
+        "Gained unauthorized access to users_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    },
+    {
+      "id": "vuln_798b4ea9",
+      "name": "Security Vulnerability from data_access",
+      "severity": "medium",
+      "description": "Vulnerability discovered via data_access attack on logs_db",
+      "target": "logs_db",
+      "attack_vector": "data_access",
+      "cwe_id": null,
+      "owasp_category": null,
+      "evidence": [
+        "Port 5432 found open on logs_db",
+        "Service vulnerable to data_access detected",
+        "Successfully bypassed authentication on logs_db",
+        "Gained unauthorized access to logs_db"
+      ],
+      "mitigation": "Implement proper security controls to prevent data_access attacks"
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-02-17T16:05:18.813039",
+    "updated_at": "2026-02-17T16:05:18.813039",
+    "total_vulnerabilities": 173,
+    "severity_breakdown": {
+      "critical": 21,
+      "high": 18,
+      "medium": 134,
+      "low": 0,
+      "info": 0
+    }
+  }
+}
