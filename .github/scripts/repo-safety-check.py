@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -12,6 +13,10 @@ CAMPAIGN_GITIGNORE = {
     "branch_structure.json",
 }
 
+CAMPAIGN_MARKERS = {
+    "7283-1",
+}
+
 FONT_MAGIC = {
     ".woff": b"wOFF",
     ".woff2": b"wOF2",
@@ -19,11 +24,45 @@ FONT_MAGIC = {
 
 DISGUISED_EXTENSIONS = {".orc"}
 
+CONFIG_PREFIXES = (
+    "eslint.config.",
+    "postcss.config.",
+    "tailwind.config.",
+    "vite.config.",
+    "next.config.",
+    "hardhat.config.",
+    "webpack.config.",
+    "rollup.config.",
+    "babel.config.",
+)
+
+SKIP_PARTS = {".git", "node_modules", "venv", ".venv", "dist", "build", ".next"}
+
+SKIP_PATHS = {Path(".github/scripts/repo-safety-check.py")}
+
+JS_PREFIXES = (b"'use strict'", b'"use strict"', b"var ", b"const ", b"function ", b"(function", b"!function")
+
 errors: list[str] = []
 
 
 def fail(message: str) -> None:
     errors.append(message)
+
+
+def text_files() -> list[Path]:
+    found = []
+    for path in Path(".").rglob("*"):
+        if not path.is_file() or SKIP_PARTS & set(path.parts):
+            continue
+        if path in SKIP_PATHS:
+            continue
+        try:
+            if path.stat().st_size > 5_000_000:
+                continue
+        except OSError:
+            continue
+        found.append(path)
+    return found
 
 
 def check_settings() -> None:
@@ -58,7 +97,7 @@ def check_tasks() -> None:
 
 def check_fonts() -> None:
     for path in Path(".").rglob("*"):
-        if not path.is_file() or ".git" in path.parts:
+        if not path.is_file() or SKIP_PARTS & set(path.parts):
             continue
         suffix = path.suffix.lower()
         if suffix in DISGUISED_EXTENSIONS:
@@ -82,11 +121,72 @@ def check_gitignore() -> None:
         fail(f"{path}: remove campaign indicator {entry!r}")
 
 
+def check_markers_and_configs() -> None:
+    for path in text_files():
+        try:
+            text = path.read_text(errors="ignore")
+        except OSError:
+            continue
+        for marker in CAMPAIGN_MARKERS:
+            if marker in text:
+                fail(f"{path}: campaign marker {marker!r} found")
+        if not path.name.startswith(CONFIG_PREFIXES):
+            continue
+        for number, line in enumerate(text.splitlines(), 1):
+            if len(line) > 2000:
+                fail(
+                    f"{path}:{number}: {len(line)} character line in a config file, "
+                    "which is the shape of an appended payload"
+                )
+
+
+def check_root_scripts() -> None:
+    for path in Path(".").iterdir():
+        if not path.is_file() or path.suffix or path.name.startswith("."):
+            continue
+        try:
+            if path.stat().st_size > 5_000_000:
+                continue
+            with path.open("rb") as handle:
+                head = handle.read(16)
+        except OSError:
+            continue
+        if not head.startswith(JS_PREFIXES):
+            continue
+        text = path.read_text(errors="ignore")
+        for number, line in enumerate(text.splitlines(), 1):
+            if len(line) > 4000:
+                fail(
+                    f"{path}:{number}: {len(line)} character line in root script "
+                    f"{path.name!r}"
+                )
+                break
+
+
+def check_package_scripts() -> None:
+    path = Path("package.json")
+    if not path.is_file():
+        return
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        fail(f"{path}: invalid JSON ({exc})")
+        return
+    for name, command in data.get("scripts", {}).items():
+        if not isinstance(command, str):
+            continue
+        if re.search(r"\bnode\s+\.?/?init\b", command):
+            fail(f"{path}: script {name!r} runs the untracked init payload")
+
+
 def main() -> int:
     check_settings()
     check_tasks()
     check_fonts()
     check_gitignore()
+    check_markers_and_configs()
+    check_root_scripts()
+    check_package_scripts()
     for error in errors:
         print(f"::error::{error}")
     if errors:
