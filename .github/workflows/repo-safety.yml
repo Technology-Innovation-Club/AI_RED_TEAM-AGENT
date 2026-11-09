@@ -1,0 +1,16 @@
+name: Repository safety
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scan for known malware indicators
+        run: python3 .github/scripts/repo-safety-check.py
